@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>इयत्ता 8 वी मराठी (माय-मराठी) - 5E पाठ टाचण जनरेटर | SmartGuruji</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f1f5f9;
+      color: #1e293b;
+      font-family: "Mukta", "Noto Sans Devanagari", "Nirmala UI", Mangal, sans-serif;
+    }
+    #sg8Mar5eLpRoot, #sg8Mar5eLpRoot * { box-sizing: border-box; }
+    #sg8Mar5eLpRoot {
+      width: 100%;
+      max-width: 1240px;
+      margin: 20px auto;
+      padding: 0 10px;
+      font-family: "Mukta", "Noto Sans Devanagari", "Nirmala UI", Mangal, sans-serif !important;
+      color: #1e293b !important;
+      font-size: 1.2rem;
+      line-height: 1.55;
+    }
+    #sg8Mar5eLpRoot .sg8mlp-shell { background: #fff; border: 1px solid #e2e8f0; border-radius: 22px; overflow: hidden; box-shadow: 0 18px 38px rgba(15, 23, 42, .08); }
+    #sg8Mar5eLpRoot .sg8mlp-hero { padding: 28px 20px 24px; text-align: center; color: #fff !important; background: linear-gradient(135deg, #0f172a, #1e3a8a 52%, #0f766e); }
+    #sg8Mar5eLpRoot .sg8mlp-brand { display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 8px; }
+    #sg8Mar5eLpRoot .sg8mlp-logo { display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 14px; background: rgba(255, 255, 255, .16); border: 1px solid rgba(255, 255, 255, .35); font-size: 26px; }
+    #sg8Mar5eLpRoot .sg8mlp-brand h2 { margin: 0 !important; color: #fff !important; font-size: 1.9rem !important; font-weight: 800; }
+    #sg8Mar5eLpRoot .sg8mlp-hero h3 { margin: 0 !important; color: #e0f2fe !important; font-size: 1.35rem !important; font-weight: 700; }
+    #sg8Mar5eLpRoot .sg8mlp-tags { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    #sg8Mar5eLpRoot .sg8mlp-tag { padding: 5px 13px; border-radius: 999px; background: rgba(0, 0, 0, .22); border: 1px solid rgba(255, 255, 255, .28); color: #fff !important; font-size: .9rem; font-weight: 700; }
+    #sg8Mar5eLpRoot .sg8mlp-work { padding: 24px; background: #f8fafc; }
+    #sg8Mar5eLpRoot .sg8mlp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    #sg8Mar5eLpRoot .sg8mlp-card { background: #fff; border: 1px solid #cbd5e1; border-radius: 16px; padding: 16px 18px; box-shadow: 0 4px 8px rgba(15, 23, 42, .03); }
+    #sg8Mar5eLpRoot .sg8mlp-full { grid-column: 1 / -1; }
+    #sg8Mar5eLpRoot .sg8mlp-label { display: flex; align-items: center; gap: 9px; margin-bottom: 9px; font-weight: 800; font-size: 1.05rem; color: #0f172a !important; }
+    #sg8Mar5eLpRoot .sg8mlp-step { padding: 2px 9px; border-radius: 8px; background: #dbeafe; color: #1e3a8a !important; font-size: .85rem; font-weight: 800; }
+    #sg8Mar5eLpRoot .sg8mlp-control { width: 100%; padding: 10px 13px; border: 2px solid #cbd5e1; border-radius: 10px; background: #fff !important; color: #0f172a !important; font: 600 1.02rem inherit; }
+    #sg8Mar5eLpRoot .sg8mlp-control:focus { outline: none; border-color: #1e3a8a; box-shadow: 0 0 0 3px rgba(30, 58, 138, .15); }
+    #sg8Mar5eLpRoot .sg8mlp-modeTabs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    #sg8Mar5eLpRoot .sg8mlp-tabBtn { padding: 11px 14px; border: 2px solid #cbd5e1; border-radius: 12px; background: #f8fafc; color: #1e293b !important; font: 700 1rem inherit; cursor: pointer; transition: .2s; text-align: center; }
+    #sg8Mar5eLpRoot .sg8mlp-tabBtn:hover { border-color: #1e3a8a; background: #eff6ff; }
+    #sg8Mar5eLpRoot .sg8mlp-tabBtn.sg8mlp-active { background: linear-gradient(135deg, #1e3a8a, #0f766e) !important; color: #fff !important; border-color: transparent; box-shadow: 0 4px 12px rgba(30, 58, 138, .22); }
+    #sg8Mar5eLpRoot .sg8mlp-lesson-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; }
+    #sg8Mar5eLpRoot .sg8mlp-catTabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+    #sg8Mar5eLpRoot .sg8mlp-catBtn { padding: 5px 13px; border: 1px solid #94a3b8; border-radius: 20px; background: #fff; color: #1e293b !important; font: 700 .9rem inherit; cursor: pointer; }
+    #sg8Mar5eLpRoot .sg8mlp-catBtn.sg8mlp-catOn { background: #1e3a8a !important; color: #fff !important; border-color: #1e3a8a; }
+    #sg8Mar5eLpRoot .sg8mlp-selectall { padding: 7px 13px; border: 0; border-radius: 9px; background: #334155 !important; color: #fff !important; font: 700 .92rem inherit; cursor: pointer; }
+    #sg8Mar5eLpRoot .sg8mlp-lessons { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+    #sg8Mar5eLpRoot .sg8mlp-lesson { display: flex; gap: 9px; align-items: flex-start; padding: 9px 11px; background: #f8fafc !important; border: 1px solid #cbd5e1; border-radius: 10px; cursor: pointer; font-size: .96rem !important; font-weight: 700 !important; line-height: 1.4; color: #0f172a !important; opacity: 1 !important; visibility: visible !important; }
+    #sg8Mar5eLpRoot .sg8mlp-lesson span { color: #0f172a !important; display: inline !important; visibility: visible !important; }
+    #sg8Mar5eLpRoot .sg8mlp-lesson:hover { background: #eff6ff !important; border-color: #93c5fd; }
+    #sg8Mar5eLpRoot .sg8mlp-lesson input { width: 18px; height: 18px; margin-top: 3px; accent-color: #1e3a8a; flex-shrink: 0; }
+    #sg8Mar5eLpRoot .sg8mlp-badge { display: inline-block !important; padding: 1px 6px; border-radius: 5px; font-size: .76rem !important; font-weight: 800 !important; margin-right: 4px; }
+    #sg8Mar5eLpRoot .sg8mlp-bGadya { background: #dbeafe !important; color: #1e40af !important; }
+    #sg8Mar5eLpRoot .sg8mlp-bPadya { background: #fce7f3 !important; color: #9d174d !important; }
+    #sg8Mar5eLpRoot .sg8mlp-bGram { background: #dcfce7 !important; color: #166534 !important; }
+    #sg8Mar5eLpRoot .sg8mlp-actions { margin-top: 18px; padding: 16px; background: #fff; border: 1px solid #cbd5e1; border-radius: 16px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    #sg8Mar5eLpRoot .sg8mlp-btn { width: 100%; padding: 12px; border: 0; border-radius: 10px; color: #fff !important; font: 800 1.02rem inherit; cursor: pointer; transition: .2s; box-shadow: 0 5px 12px rgba(15, 23, 42, .11); }
+    #sg8Mar5eLpRoot .sg8mlp-btn:hover:not(:disabled) { transform: translateY(-2px); filter: brightness(1.06); }
+    #sg8Mar5eLpRoot .sg8mlp-btn:disabled { opacity: .5; cursor: not-allowed; }
+    #sg8Mar5eLpRoot .sg8mlp-generate { background: linear-gradient(135deg, #7c3aed, #5b21b6) !important; }
+    #sg8Mar5eLpRoot .sg8mlp-preview { background: #2563eb !important; }
+    #sg8Mar5eLpRoot .sg8mlp-print { background: #059669 !important; }
+    #sg8Mar5eLpRoot .sg8mlp-status { display: none; margin-top: 14px; padding: 10px 14px; border-radius: 10px; font-size: 1rem; font-weight: 700; text-align: center; }
+    #sg8Mar5eLpRoot .sg8mlp-ok { display: block; background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+    #sg8Mar5eLpRoot .sg8mlp-warn { display: block; background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+    #sg8Mar5eLpRoot .sg8mlp-previewArea { display: none; padding: 24px; background: #e2e8f0; border-top: 1px solid #cbd5e1; overflow-x: auto; }
+    #sg8Mar5eLpRoot .sg8mlp-previewBar { max-width: 297mm; margin: 0 auto 14px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+    #sg8Mar5eLpRoot .sg8mlp-miniTab { padding: 7px 16px; border: 2px solid #94a3b8; border-radius: 50px; background: #fff; color: #1e293b !important; font: 700 .95rem inherit; cursor: pointer; }
+    #sg8Mar5eLpRoot .sg8mlp-miniTab.sg8mlp-active { background: #1e3a8a !important; color: #fff !important; border-color: #1e3a8a; }
+    #sg8Mar5eLpRoot .sg8mlp-sheet { width: 277mm; min-height: 190mm; margin: 0 auto 24px; padding: 10mm 11mm 16mm; background: #fff; color: #000 !important; box-shadow: 0 10px 30px rgba(0, 0, 0, .15); font-size: 13.5px; line-height: 1.45; position: relative; border: 2.5px solid #000; outline: 1px solid #000; outline-offset: -5px; page-break-after: always; }
+    #sg8Mar5eLpRoot .sg8mlp-sheet:last-child { page-break-after: auto; }
+    #sg8Mar5eLpRoot .sg8mlp-docHeader { text-align: center; border-bottom: 2px solid #000; padding-bottom: 6px; margin-bottom: 8px; }
+    #sg8Mar5eLpRoot .sg8mlp-school { font-size: 18.5px; font-weight: 800; margin: 0; color: #000 !important; }
+    #sg8Mar5eLpRoot .sg8mlp-subTitle { font-size: 15px; font-weight: 800; margin: 2px 0 6px; color: #000 !important; }
+    #sg8Mar5eLpRoot .sg8mlp-metaGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 5px 10px; text-align: left; font-size: 12.5px; font-weight: 700; padding: 6px 8px; background: #f8fafc; border: 1px solid #334155; border-radius: 4px; margin-top: 5px; color: #000 !important; }
+    #sg8Mar5eLpRoot .sg8mlp-objBox { border: 1px solid #000; padding: 6px 10px; margin: 7px 0 8px; background: #fff; font-size: 12.8px; color: #000 !important; }
+    #sg8Mar5eLpRoot .sg8mlp-table { width: 100%; border-collapse: collapse; table-layout: fixed; margin-top: 5px; }
+    #sg8Mar5eLpRoot .sg8mlp-table th, #sg8Mar5eLpRoot .sg8mlp-table td { border: 1px solid #000; padding: 5px 6px; vertical-align: top; word-wrap: break-word; color: #000 !important; font-size: 12.3px; }
+    #sg8Mar5eLpRoot .sg8mlp-table th { background: #e2e8f0; font-weight: 800; text-align: center; }
+    #sg8Mar5eLpRoot .sg8mlp-stageTag { display: inline-block; padding: 1px 6px; border: 1px solid #000; border-radius: 3px; background: #f1f5f9; font-weight: 800; font-size: 11.5px; margin-bottom: 3px; }
+    #sg8Mar5eLpRoot .sg8mlp-dateBox { font-size: 11.5px; font-weight: 700; line-height: 2.1; }
+    #sg8Mar5eLpRoot .sg8mlp-reflSpace { height: 26px; border-bottom: 1px dotted #64748b; margin-top: 4px; }
+    #sg8Mar5eLpRoot .sg8mlp-signRow { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 24px; padding-top: 14px; border-top: 1.5px solid #000; font-size: 13px; font-weight: 800; color: #000 !important; }
+    #sg8Mar5eLpRoot .sg8mlp-signCol { text-align: center; min-width: 200px; }
+    #sg8Mar5eLpRoot .sg8mlp-signLine { height: 38px; border-bottom: 1.5px solid #000; margin-bottom: 5px; }
+    #sg8Mar5eLpRoot .sg8mlp-wsTitle { text-align: center; font-size: 16px; font-weight: 800; text-decoration: underline; margin: 6px 0 10px; }
+    #sg8Mar5eLpRoot .sg8mlp-wsQ { margin: 8px 0 5px; font-size: 14px; font-weight: 700; }
+    #sg8Mar5eLpRoot .sg8mlp-wsLine { height: 24px; border-bottom: 1px dotted #555; margin: 4px 0 9px 14px; }
+    #sg8Mar5eLpRoot .sg8mlp-watermark { position: absolute; right: 11px; bottom: 6px; font-size: 10px; color: rgba(0, 0, 0, .45) !important; font-style: italic; font-weight: 800; letter-spacing: .4px; pointer-events: none; }
+
+    @media (max-width: 900px) {
+      #sg8Mar5eLpRoot .sg8mlp-lessons { grid-template-columns: 1fr 1fr; }
+      #sg8Mar5eLpRoot .sg8mlp-actions { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 700px) {
+      #sg8Mar5eLpRoot .sg8mlp-grid,
+      #sg8Mar5eLpRoot .sg8mlp-modeTabs,
+      #sg8Mar5eLpRoot .sg8mlp-lessons { grid-template-columns: 1fr; }
+      #sg8Mar5eLpRoot .sg8mlp-full { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="sg8Mar5eLpRoot">
+  <div class="sg8mlp-shell">
+    <header class="sg8mlp-hero">
+      <div class="sg8mlp-brand">
+        <div class="sg8mlp-logo">📘</div>
+        <h2>SmartGuruji</h2>
+      </div>
+      <h3>इयत्ता 8 वी मराठी (प्रथम भाषा – माय-मराठी) – 5E पाठ टाचण जनरेटर</h3>
+      <div class="sg8mlp-tags">
+        <span class="sg8mlp-tag">📝 5E मॉडेल पाठ टाचण</span>
+        <span class="sg8mlp-tag">📚 सर्व 23 पाठ + व्याकरण व लेखन</span>
+        <span class="sg8mlp-tag">📄 A4 Landscape Bordered PDF</span>
+        <span class="sg8mlp-tag">✍️ तारीख व मुख्याध्यापक सहीसाठी जागा</span>
+      </div>
+    </header>
+
+    <section class="sg8mlp-work">
+      <div class="sg8mlp-grid">
+        <div class="sg8mlp-card">
+          <div class="sg8mlp-label"><span class="sg8mlp-step">1</span>शाळेचे नाव</div>
+          <input id="sg8mlpSchool" class="sg8mlp-control" type="text" placeholder="उदा. सरकारी मराठी उच्च प्राथमिक / माध्यमिक शाळा">
+        </div>
+        <div class="sg8mlp-card">
+          <div class="sg8mlp-label"><span class="sg8mlp-step">2</span>शिक्षकाचे नाव</div>
+          <input id="sg8mlpTeacher" class="sg8mlp-control" type="text" placeholder="उदा. श्री. सचिन कामते">
+        </div>
+        <div class="sg8mlp-card">
+          <div class="sg8mlp-label"><span class="sg8mlp-step">3</span>शैक्षणिक वर्ष व महिना</div>
+          <input id="sg8mlpYear" class="sg8mlp-control" type="text" value="2026-27" placeholder="उदा. 2026-27 / जुलै">
+        </div>
+        <div class="sg8mlp-card">
+          <div class="sg8mlp-label"><span class="sg8mlp-step">4</span>अवधी (तासिका)</div>
+          <select id="sg8mlpPeriods" class="sg8mlp-control">
+            <option value="4 तासिका (प्रत्येकी 40 मिनिटे)">4 तासिका (प्रत्येकी 40 मिनिटे)</option>
+            <option value="6 तासिका (प्रत्येकी 40 मिनिटे)" selected>6 तासिका (प्रत्येकी 40 मिनिटे)</option>
+            <option value="8 तासिका (प्रत्येकी 40 मिनिटे)">8 तासिका (प्रत्येकी 40 मिनिटे)</option>
+          </select>
+        </div>
+
+        <div class="sg8mlp-card sg8mlp-full">
+          <div class="sg8mlp-label"><span class="sg8mlp-step">5</span>PDF / प्रिंटचा प्रकार निवडा</div>
+          <div class="sg8mlp-modeTabs">
+            <button type="button" class="sg8mlp-tabBtn sg8mlp-active" data-mode="plan">📋 फक्त 5E पाठ टाचण (अधिकृत नमुना)</button>
+            <button type="button" class="sg8mlp-tabBtn" data-mode="plan_ws">📝 पाठ टाचण + स्वाध्याय कार्यपत्रिका (दोन्ही प्रिंट)</button>
+          </div>
+        </div>
+
+        <div class="sg8mlp-card sg8mlp-full">
+          <div class="sg8mlp-lesson-head">
+            <div class="sg8mlp-label" style="margin:0"><span class="sg8mlp-step">6</span>एक किंवा अनेक पाठ निवडा (इयत्ता 8 वी माय-मराठी – सर्व 24 घटक)</div>
+            <button type="button" id="sg8mlpSelectAll" class="sg8mlp-selectall">दिसणारे सर्व निवडा / काढा</button>
+          </div>
+          <div class="sg8mlp-catTabs" id="sg8mlpCatTabs">
+            <button type="button" class="sg8mlp-catBtn sg8mlp-catOn" data-cat="all">सर्व (24)</button>
+            <button type="button" class="sg8mlp-catBtn" data-cat="gadya">गद्य (12)</button>
+            <button type="button" class="sg8mlp-catBtn" data-cat="padya">पद्य / कविता (11)</button>
+            <button type="button" class="sg8mlp-catBtn" data-cat="gram">व्याकरण व लेखन (1)</button>
+          </div>
+          <div class="sg8mlp-lessons" id="sg8mlpLessons"></div>
+        </div>
+      </div>
+
+      <div class="sg8mlp-actions">
+        <button type="button" id="sg8mlpGenerate" class="sg8mlp-btn sg8mlp-generate">📄 पाठ टाचण तयार करा</button>
+        <button type="button" id="sg8mlpPreview" class="sg8mlp-btn sg8mlp-preview" disabled>👁️ Preview पाहा</button>
+        <button type="button" id="sg8mlpPrint" class="sg8mlp-btn sg8mlp-print" disabled>🖨️ Print / Save as PDF</button>
+      </div>
+      <div id="sg8mlpStatus" class="sg8mlp-status"></div>
+    </section>
+
+    <section id="sg8mlpPreviewArea" class="sg8mlp-previewArea">
+      <div class="sg8mlp-previewBar">
+        <button type="button" class="sg8mlp-miniTab sg8mlp-active" data-mode="plan">📋 फक्त 5E पाठ टाचण</button>
+        <button type="button" class="sg8mlp-miniTab" data-mode="plan_ws">📝 पाठ टाचण + स्वाध्याय कार्यपत्रिका</button>
+      </div>
+      <div id="sg8mlpPaperWrap"></div>
+    </section>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  function initSg8MarLp() {
+    var root = document.getElementById("sg8Mar5eLpRoot");
+    if (!root || root.getAttribute("data-ready") === "1") return;
+    root.setAttribute("data-ready", "1");
+
+    var LESSONS = [
+      {
+        id: "m01", no: "1", cat: "padya", dept: "भावकविता (पाठांतर*)", title: "तो राजहंस एक", author: "कवी : ग. दि. माडगूळकर (पृ. 1–3)", method: "गायन व भावार्थ विश्लेषण",
+        obj: "स्वतःची खरी ओळख व आत्मविश्वास (मूल्य : आत्मविश्वास) जागृत करणे; भावकवितेचे तालासुरात गायन व पाठांतर करणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "परिसंवाद", act: "'आधुनिक वाल्मीकी' ग. दि. माडगूळकर यांचा परिचय देऊन बदक व राजहंस या पक्ष्यांची चित्रे दाखवून पूर्वज्ञान जागृत करणे.", tlm: "राजहंस व बदक चित्रे, फलक", cce: "तोंडी प्रश्नोत्तर", ref: "विद्यार्थ्यांनी पक्ष्यांमधील फरक ओळखले." },
+        e2: { skill: "श्रवण, गायन", m: "गायन पद्धती", act: "'तो राजहंस एक' या भावगीताचे सुरेल व भावपूर्ण गायन करून विद्यार्थ्यांकडून समूहगायन व पाठांतर करवून घेणे.", tlm: "पाठ्यपुस्तक, ध्वनिफीत", cce: "गायन निरीक्षण", ref: "तालासुरात गायनातून कवितेचा भाव पोहोचला." },
+        e3: { skill: "आकलन, व्याकरण", m: "स्पष्टीकरण", act: "सुरेख, संगे, धाक, क्षणैक, तरंगे, कुरूप शब्दांचे अर्थ स्पष्ट करणे. पाण्यात प्रतिबिंब पाहून पिल्लाला स्वतःची ओळख कशी पटली हे समजावणे. भाषाभ्यास: संधी विग्रह (क्षणैक).", tlm: "शब्दपट्ट्या, फलक", cce: "चर्चा व प्रश्नोत्तर", ref: "संधी विग्रह व भावार्थ स्पष्ट समजला." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "संदर्भासह स्पष्टीकरण ('त्याचेच त्याला कळले, तो राजहंस एक'), समानार्थी-विरुद्धार्थी शब्द, बहुपर्यायी प्रश्न व राजहंसाची अधिक माहिती संकलित करणे.", tlm: "वह्या, संदर्भ पुस्तके", cce: "लेखन तपासणी", ref: "विद्यार्थ्यांनी संदर्भासह स्पष्टीकरण अचूक लिहिले." },
+        e5: { skill: "गायन, लेखन", m: "पाठांतर व लेखी", act: "कवितेचे पाठांतर ऐकणे व दोन-तीन व सात-आठ वाक्यांत उत्तरे घेऊन लेखी मूल्यमापन करणे.", tlm: "स्वाध्याय पत्रिका", cce: "तोंडी व लेखी चाचणी", ref: "आत्मविश्वास व स्व-ओळखीचे मूल्य रुजले." },
+        ws: ["बदकाच्या पिलांपेक्षा राजहंसाचे पिल्लू वेगळे का तरंगत होते?", "आपण राजहंस असल्याचे पिल्लाला केव्हा व कसे कळले?", "संदर्भासह स्पष्टीकरण करा : 'त्याचेच त्याला कळले, तो राजहंस एक.'", "समानार्थी व विरुद्धार्थी शब्द लिहा : (1) कुरूप (2) सुरेख (3) धाक.", "विग्रह करून संधी ओळखा : 'क्षणैक'."]
+      },
+      {
+        id: "m02", no: "2", cat: "gadya", dept: "कथा", title: "दिव्य दृष्टी", author: "लेखिका : डॉ. विजया वाड (पृ. 4–11)", method: "कथाकथन व संवादवाचन",
+        obj: "शारीरिक व्यंग असूनही अंतश्चक्षू, स्पर्शज्ञान, घ्राणेंद्रिय व जिद्दीच्या बळावर असामान्य कार्य करता येते (मूल्य : जिद्द) हे समजावणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "परिसंवाद", act: "'दृष्टीहीन व्यक्ती दैनंदिन कामे कशी करतात? ब्रेल लिपी म्हणजे काय?' यावर चर्चा करून अंधशाळेतील विद्यार्थ्यांबद्दल संवेदनशीलता जागृत करणे.", tlm: "ब्रेल लिपी नमुना / चित्र", cce: "तोंडी चर्चा", ref: "विद्यार्थ्यांमध्ये दिव्यांगांप्रती आदरभाव निर्माण झाला." },
+        e2: { skill: "वाचन, श्रवण", m: "प्रकटवाचन", act: "गौरी, शिवांगी, दादा, काकू आणि इन्स्पेक्टर राणे यांच्यातील मुंबई दर्शन व गिरगाव चौपाटीवरील प्रसंग प्रभावीपणे वाचून दाखवणे.", tlm: "पाठ्यपुस्तक", cce: "वाचन निरीक्षण", ref: "शिवांगीच्या गुप्तहेरगिरीच्या प्रसंगाने विद्यार्थी भारावले." },
+        e3: { skill: "आकलन", m: "विश्लेषण", act: "शिवांगीने मोगऱ्याच्या अत्तराचा वास व पाठीवरील आवळीच्या (गाठीच्या) स्पर्शावरून सुरतीलाल चोराला कसे ओळखले हे स्पष्ट करणे.", tlm: "फलक, शब्दपट्ट्या", cce: "चर्चा व प्रश्नोत्तर", ref: "'दिव्य दृष्टी' या शीर्षकाची समर्पकता स्पष्ट झाली." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "संदर्भासह स्पष्टीकरण ('कमालकी लडकी है ये!'), वाक्प्रचार (जीवाची मुंबई करणे, धाय मोकलून रडणे, हळहळणे, देवाघरी जाणे) व बहुपर्यायी प्रश्न सोडवणे.", tlm: "फलक, वह्या", cce: "कृती तपासणी", ref: "वाक्प्रचारांचा अचूक वाक्यात उपयोग केला." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "चार-पाच वाक्यांत उत्तरे (शिवांगीने चोराला कोणत्या पद्धतीने ओळखले?) घेऊन लेखी चाचणीद्वारे मूल्यमापन करणे.", tlm: "चाचणी पत्रिका", cce: "लेखी चाचणी", ref: "जिद्द, आत्मविश्वास व निरीक्षणशक्तीचे महत्त्व पटले." },
+        ws: ["गौरी आणि शिवांगी कोठे राहत होत्या व शिवांगीला मोठेपणी काय व्हायचे होते?", "गिरगाव चौपाटीवर गौरीची आई धाय मोकलून का रडू लागली?", "शिवांगीने सुरतीलाल चोराला कोणत्या पद्धतीने ओळखले?", "संदर्भासह स्पष्टीकरण करा : 'कमालकी लडकी है ये!'", "वाक्यात उपयोग करा : (1) जीवाची मुंबई करणे (2) हळहळणे."]
+      },
+      {
+        id: "m03", no: "3", cat: "padya", dept: "भूपाळी", title: "चल ऊठ रे मुकुंदा", author: "कवी : सुरेश भट (पृ. 12–13)", method: "भूपाळी गायन व रसास्वाद",
+        obj: "प्रातःकाळच्या निसर्गसौंदर्याचा व वात्सल्याचा (मूल्य : निसर्गप्रेम, वात्सल्य) आस्वाद घेणे; 'चेतनगुणोक्ती अलंकार' ओळखणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "परिसंवाद", act: "'भूपाळी' म्हणजे काय व ती केव्हा गायली जाते? 'घनश्याम सुंदरा' सारख्या भूपाळीचा संदर्भ देऊन पूर्वज्ञान जागृत करणे.", tlm: "पहाटेचे निसर्गचित्र, सुरेश भट परिचय", cce: "तोंडी प्रश्न", ref: "विद्यार्थ्यांनी भूपाळी व पहाटेची वैशिष्ट्ये सांगितली." },
+        e2: { skill: "श्रवण, गायन", m: "गायन पद्धती", act: "कवी सुरेश भट यांच्या 'चल ऊठ रे मुकुंदा' या भूपाळीचे मधुर चालीवर गायन करून विद्यार्थ्यांकडून समूहगायन घेणे.", tlm: "पाठ्यपुस्तक, ध्वनिफीत", cce: "गायन निरीक्षण", ref: "भूपाळीच्या गोड चालीत मुलांनी गायन केले." },
+        e3: { skill: "आकलन, व्याकरण", m: "स्पष्टीकरण", act: "उषा, कुंज, कालिंदी, शुक्रतारा, इशारा शब्दांचे अर्थ व भावार्थ स्पष्ट करणे. भाषाभ्यास: अचेतन वस्तूंवर मानवी भावनांचा आरोप म्हणजे 'चेतनगुणोक्ती अलंकार' शिकवणे.", tlm: "अलंकार तक्ता, फलक", cce: "चर्चा व प्रश्नोत्तर", ref: "चेतनगुणोक्ती अलंकाराची उदाहरणे विद्यार्थ्यांना कळली." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "जोड्या जुळवणे (पहाटवारा–चोरपावलांनी आला, चांदण्याला–जाग आली), संदर्भासह स्पष्टीकरण व कवितेचा सरळ अर्थ लिहून घेणे.", tlm: "फलक, वह्या", cce: "लेखन तपासणी", ref: "काव्यसौंदर्य व अलंकार आकलन वाढले." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "दोन-तीन व चार-पाच वाक्यांत उत्तरे (कृष्णाला उठविण्याच्या वेळी सृष्टीत काय घडले होते?) यांवर चाचणी घेणे.", tlm: "स्वाध्याय पत्रिका", cce: "लेखी मूल्यमापन", ref: "निसर्गसौंदर्य व काव्यरसास्वाद विकसित झाला." },
+        ws: ["यशोदा कोणाला व कशी उठवत आहे?", "कृष्णाला उठवताना सृष्टीत कोणकोणते बदल घडले होते?", "जोड्या जुळवा : पहाटवारा, चांदण्याला, शुक्रतारा, कालिंदीचा किनारा.", "संदर्भासह स्पष्टीकरण करा : 'तव गोकुळाने केला बेचैन हा पुकारा.'", "'चेतनगुणोक्ती अलंकार' म्हणजे काय? कवितेतील एक उदाहरण लिहा."]
+      },
+      {
+        id: "m04", no: "4", cat: "gadya", dept: "ललित लेख", title: "सुखाची चव", author: "लेखिका : डॉ. अरुणा ढेरे (पृ. 14–17)", method: "ललित वाचन व संवेदनशील चर्चा",
+        obj: "वाट पाहण्यात व संयमातच खऱ्या सुखाची चव असते (मूल्य : संयम) हे समजावणे; वाचनाची गोडी व करुणेचे मूल्य रुजवणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "चर्चात्मक", act: "'उन्हाळ्याच्या सुट्टीची तुम्ही कशी वाट पाहता? सुट्टीत कोणत्या गोष्टी करायला आवडतात?' यावर गप्पा मारून पूर्वज्ञान जागृत करणे.", tlm: "उन्हाळी सुट्टी व पुस्तकांची चित्रे", cce: "अनुभव कथन", ref: "विद्यार्थ्यांनी सुट्टीतील गंमती-जमती सांगितल्या." },
+        e2: { skill: "वाचन, श्रवण", m: "प्रकटवाचन", act: "डॉ. अरुणा ढेरे यांचा परिचय देऊन सुट्टीची प्रतीक्षा, वाचनाची आवड व 'पोस्टमन इन द माउंटन' चिनी चित्रपटातील प्रसंग भावपूर्ण वाचणे.", tlm: "पाठ्यपुस्तक", cce: "वाचन निरीक्षण", ref: "आंधळ्या म्हातारीला कोरे पत्र वाचून दाखवणाऱ्या पोस्टमनचा प्रसंग मुलांना भावला." },
+        e3: { skill: "आकलन", m: "विश्लेषण", act: "मोहोर, सार्थक, हजारी मोगरा, वाळा, अनिच्छेने, तृप्ती शब्दार्थ व 'वाट पाहण्यातच मोलाच्या गोष्टींची किंमत कळते' हा विचार स्पष्ट करणे.", tlm: "फलक, शब्दपट्ट्या", cce: "चर्चा व प्रश्नोत्तर", ref: "संयम आणि करुणेचा स्पर्श विद्यार्थ्यांना समजला." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "जोड्या जुळवणे, वाक्प्रचार (वेड लागणे, सार्थक होणे, थक्क होणे, मोल समजणे) व 'वाट' शब्दावरील वाक्प्रचार शोधून वाक्यात उपयोग करणे.", tlm: "फलक, वह्या", cce: "गटकार्य तपासणी", ref: "ललित लेखनशैली व वाक्प्रचारांचा सराव झाला." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "चार-पाच व सात-आठ वाक्यांत उत्तरे (सुखाची चव कशी वाढेल?) घेऊन लेखी मूल्यमापन करणे.", tlm: "चाचणी पत्रिका", cce: "लेखी चाचणी", ref: "संयम, वाचनप्रेम व सहृदयता ही मूल्ये रुजली." },
+        ws: ["लेखिकेला सुट्टीची वाट पाहताना कोणकोणत्या गोष्टी आठवत असत?", "चिनी चित्रपटातील पोस्टमन आंधळ्या म्हातारीसाठी कोरे पत्र का वाचून दाखवत असे?", "सुखाची चव कशी वाढते असे लेखिका म्हणतात?", "वाक्यात उपयोग करा : (1) वेड लागणे (2) सार्थक होणे (3) थक्क होणे."]
+      },
+      {
+        id: "m05", no: "5", cat: "padya", dept: "देशभक्ती गीत", title: "हा हिंद देश माझा", author: "कवी : आ. कृ. टेकाडे (पृ. 18–20)", method: "समूहगायन व सांस्कृतिक चर्चा",
+        obj: "भारताची सत्यनिष्ठा, थोर विभूती, ऋषीमुनी, वीर योद्धे व निसर्गवैभव यांचा अभिमान (मूल्य : देशप्रेम) जागृत करणे; संधी व अलंकार शिकवणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "परिसंवाद", act: "हिमालय, गंगा नदी, छत्रपती शिवाजी महाराज यांची चित्रे दाखवून देशभक्तीपर गीतांबद्दल पूर्वज्ञान जागृत करणे.", tlm: "भारत नकाशा, थोर विभूतींची चित्रे", cce: "तोंडी प्रश्न", ref: "विद्यार्थ्यांनी देशभक्तीपर गीतांची नावे सांगितली." },
+        e2: { skill: "श्रवण, गायन", m: "खड्या स्वरात गायन", act: "आनंदराव कृष्णाजी टेकाडे यांच्या 'हा हिंद देश माझा' या देशभक्तीपर गीताचे खड्या स्वरात गायन व समूहगायन घेणे.", tlm: "पाठ्यपुस्तक, ध्वनिफीत", cce: "गायन निरीक्षण", ref: "जोशपूर्ण समूहगायनाने वर्गात देशभक्तीचे वातावरण निर्माण झाले." },
+        e3: { skill: "आकलन, व्याकरण", m: "विश्लेषण", act: "शील, हिमाचल, गाजी, नटेश, शुक, जनक, जानकी, दमयंती, पृथ्वीराज, शिवजी यांचे संदर्भ स्पष्ट करणे. भाषाभ्यास: संधी (हिमाचल, रणांगण, जनकादि) व अलंकार शिकवणे.", tlm: "व्याकरण तक्ता, फलक", cce: "चर्चा व प्रश्नोत्तर", ref: "पौराणिक-ऐतिहासिक संदर्भ व संधी स्पष्ट झाले." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "सहसंबंध पूर्ण करणे (जनक : राजयोगी :: शुक : ____), संदर्भासह स्पष्टीकरण व 'माझा हिंद देश' यावर 15 ओळी निबंध लेखन घेणे.", tlm: "फलक, वह्या", cce: "निबंध तपासणी", ref: "विद्यार्थ्यांनी प्रभावी देशप्रेमपर निबंध लिहिला." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "पाच-सहा वाक्यांत उत्तरे (हिंद देशात कोणत्या थोर व्यक्ती होऊन गेल्या?) व संधी सोडवा यावर चाचणी घेणे.", tlm: "स्वाध्याय पत्रिका", cce: "लेखी मूल्यमापन", ref: "राष्ट्रीय एकात्मता व देशभक्तीची भावना दृढ झाली." },
+        ws: ["भारत देशाला भूषविणारी स्त्री-रत्ने व वीर पुरुष कोणकोणते आहेत?", "हिंद देश कशाकशामुळे पावन व सुंदर बनला आहे?", "सहसंबंध पूर्ण करा : (1) सत्यास : ठाव :: वृत्तीस : ______ (2) जनक : राजयोगी :: शुक : ______.", "संधी विग्रह करा : (1) हिमाचल (2) रणांगण (3) जनकादि.", "'माझा हिंद देश' या विषयावर 8 ते 10 ओळी लिहा."]
+      },
+      {
+        id: "m06", no: "6", cat: "gadya", dept: "नाट्यछटा", title: "चिंगी महिन्याची झाली नाही तोच...", author: "लेखक : दिवाकर (शंकर काशीनाथ गर्गे, पृ. 21–24)", method: "एकपात्री नाट्यछटा अभिनय",
+        obj: "मराठीतील 'नाट्यछटा' या साहित्यप्रकाराची ओळख करून देणे; आईच्या असीम वात्सल्याचा (मूल्य : वात्सल्य) व मनोराज्याचा आस्वाद घेणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "चर्चात्मक", act: "'नाट्यछटा म्हणजे काय? नाटक व नाट्यछटा यांत काय फरक आहे?' हे समजावून सांगून लहान बाळाबद्दल आईच्या स्वप्नांवर चर्चा करणे.", tlm: "दिवाकर परिचय तक्ता, फलक", cce: "तोंडी चर्चा", ref: "नाट्यछटा या वेगळ्या साहित्यप्रकाराबद्दल कुतूहल वाढले." },
+        e2: { skill: "वाचन, अभिनय", m: "नाट्यछटा वाचन", act: "पाळण्याजवळ बसून एक महिन्याच्या चिंगीशी बोलणारी आई हा एकपात्री अभिनय आवाजाच्या चढ-उतारासह सादर करून दाखवणे.", tlm: "पाठ्यपुस्तक", cce: "श्रवण व अभिनय निरीक्षण", ref: "आईच्या गोड मनोराज्याने वर्गात आनंदाचे वातावरण पसरले." },
+        e3: { skill: "आकलन, व्याकरण", m: "विश्लेषण", act: "सरी, बिंदल्या, वाळे, साखळ्या, परकर-पोलके, चौघडा, चंद्रज्योती, दैव, गालगुच्चा शब्दार्थ स्पष्ट करणे. भाषाभ्यास: उपमा अलंकार ('माझ्या छबीला नक्षत्रासारखा नवरा मिळेल') शिकवणे.", tlm: "अलंकार तक्ता, शब्दपट्ट्या", cce: "प्रश्नोत्तर", ref: "बोलीभाषेतील गोडवा व उपमा अलंकार समजला." },
+        e4: { skill: "संभाषण, लेखन", m: "अभिनय व गटकार्य", act: "विद्यार्थ्यांकडून नाट्यछटेचे एकपात्री सादरीकरण करून घेणे; वाक्प्रचार (दैवाची असणे, मुठीत ठेवणे), बहुपर्यायी व संदर्भासह स्पष्टीकरण सोडवणे.", tlm: "वह्या, फलक", cce: "सादरीकरण निरीक्षण", ref: "विद्यार्थ्यांचा रंगमंचीय आत्मविश्वास वाढला." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "चार-पाच व सात-आठ वाक्यांत उत्तरे (चिंगी महिन्याची झाली नाही तोच आई काय मनोराज्य करते?) यांवर लेखी चाचणी घेणे.", tlm: "चाचणी पत्रिका", cce: "लेखी चाचणी", ref: "नाट्यछटा साहित्यप्रकार व वात्सल्याची जाणीव झाली." },
+        ws: ["नाट्यछटा हा साहित्यप्रकार मराठीत प्रथम कोणी आणला?", "चिंगीची आई तिच्या लग्नासाठी व दागिन्यांबद्दल काय काय ठरवते?", "संदर्भासह स्पष्टीकरण करा : 'माणसाला कसं मुठीत ठेवायला हवं बरं का!'", "वाक्यात उपयोग करा : (1) दैवाची असणे (2) मुठीत ठेवणे.", "अलंकार ओळखा : 'माझ्या छबीला नक्षत्रासारखा नवरा मिळेल.'"]
+      },
+      {
+        id: "m07", no: "7", cat: "padya", dept: "निसर्ग कविता", title: "तिथे!", author: "कवी : गणेश हरी पाटील (पृ. 25–29)", method: "गायन व निसर्ग रसास्वाद",
+        obj: "ग्रामीण निसर्गातील रानजाई, तरवड, गोकर्ण, बाभळी, निवडुंग व बालपणीच्या निसर्गसान्निध्याचे सौंदर्य अनुभवणे; यमक अलंकार व संधी शिकवणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "चर्चात्मक", act: "'रानात किंवा शेताच्या बांधावर तुम्ही कोणकोणती रानफुले, झुडपे व पक्षी पाहिले आहेत?' यावर चर्चा करून पूर्वज्ञान जागृत करणे.", tlm: "रानफुले, बाभळी व पाखरांची चित्रे", cce: "तोंडी प्रश्न", ref: "विद्यार्थ्यांनी स्वतः पाहिलेल्या रानफुलांची नावे सांगितली." },
+        e2: { skill: "श्रवण, गायन", m: "गायन पद्धती", act: "कवी गणेश हरी पाटील यांच्या 'तिथे!' कवितेचे तालासुरात गायन करून विद्यार्थ्यांकडून समूहगायन करवून घेणे.", tlm: "पाठ्यपुस्तक", cce: "गायन निरीक्षण", ref: "कवितेतील ग्रामीण निसर्गवर्णन मुलांना खूप आवडले." },
+        e3: { skill: "आकलन, व्याकरण", m: "स्पष्टीकरण", act: "वल्लरी, खलाटीत, तरवड, बळे, खुळखुळे, गोकर्ण, भोरड्या, घायपात, समशेरी, पांदी, स्थित्यंतर शब्दार्थ स्पष्ट करणे. भाषाभ्यास: संधी (स्थित्यंतर, अधिकांश) व यमक अलंकार शिकवणे.", tlm: "शब्दार्थ व संधी तक्ता, फलक", cce: "चर्चा व प्रश्नोत्तर", ref: "ग्रामीण निसर्गशब्दांचा अर्थ व संधी विग्रह समजला." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "बहुपर्यायी प्रश्न, संदर्भासह स्पष्टीकरण ('दरवळे गंध त्यामुळे भान हरपते!'), यमक अलंकाराची उदाहरणे व संध्याकाळच्या निसर्गसौंदर्याचे वर्णन लिहिणे.", tlm: "फलक, वह्या", cce: "लेखन तपासणी", ref: "निसर्गवर्णनात्मक लेखन कौशल्य वाढले." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "चार-पाच व सात-आठ वाक्यांत उत्तरे (कवीला आजही 'त्या' ठिकाणाचे आकर्षण का वाटते?) यांवर चाचणी घेणे.", tlm: "स्वाध्याय पत्रिका", cce: "लेखी मूल्यमापन", ref: "निसर्गप्रेम व बालपणीच्या निसर्गआठवणींची जाणीव झाली." },
+        ws: ["कवीचे भान केव्हा हरपते?", "झाडीत शिरल्यावर कवीला कोणते अद्भुत दृश्य जाणवते?", "संदर्भासह स्पष्टीकरण करा : 'मी कितीक स्थित्यंतरे जगी पाहिली.'", "संधी विग्रह करा : (1) स्थित्यंतर (2) अधिकांश.", "कवितेतील यमक अलंकाराची दोन उदाहरणे लिहा."]
+      },
+      {
+        id: "m08", no: "8", cat: "gadya", dept: "ग्रामीण कथा", title: "अतिथी", author: "लेखक : वा. कृ. चोरघडे (पृ. 30–37)", method: "कथाकथन व सांस्कृतिक चर्चा",
+        obj: "बैलपोळा सणातून मुक्या प्राण्यांप्रती कृतज्ञता व भूतदया (मूल्य : भूतदया) जपणे; स्वाभिमान व ग्रामीण संस्कृतीची ओळख करून देणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "परिसंवाद", act: "'बैलपोळा (कारहुण्णिवे) सण कसा साजरा करतात? बैलांची पूजा का केली जाते?' यावर चर्चा करून बैलांच्या मिरवणुकीचे चित्र दाखवणे.", tlm: "बैलपोळा सणाचे चित्र", cce: "अनुभव कथन", ref: "विद्यार्थ्यांनी गावातील बैलपोळ्याचे वर्णन केले." },
+        e2: { skill: "वाचन, श्रवण", m: "कथाकथन", act: "पैकू, बायजा व लाल्या-ढवळ्या बैलजोडीची सजावट, मिरवणूक आणि डॉक्टरीणबाईंचा प्रसंग संवादात्मक स्वरात वाचून दाखवणे.", tlm: "पाठ्यपुस्तक", cce: "वाचन निरीक्षण", ref: "पैकूचा स्वाभिमान व बैलांवरील प्रेम मुलांना भावले." },
+        e3: { skill: "आकलन, व्याकरण", m: "विश्लेषण", act: "पैकूने डॉक्टरीणबाईंनी दिलेली एक रुपयाची नोट तेलवातीवर का जाळली व 'मारबत' म्हणजे काय हे स्पष्ट करणे. भाषाभ्यास: उपमा अलंकार व वाक्प्रचार (आडवे होणे, मोबदला चुकवणे).", tlm: "अलंकार तक्ता, फलक", cce: "चर्चा व प्रश्नोत्तर", ref: "'अतिथी' शीर्षकाचा मर्मार्थ व उपमा अलंकार समजला." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "बहुपर्यायी प्रश्न, संदर्भासह स्पष्टीकरण ('बाई दारी देव आणले आहेत पूजा करा!'), अलंकार ओळखणे व वाक्प्रचारांचा वाक्यात उपयोग करणे.", tlm: "फलक, वह्या", cce: "कृती तपासणी", ref: "संदर्भासह स्पष्टीकरण व वाक्प्रचार अचूक लिहिले." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "चार-पाच व सात-आठ वाक्यांत उत्तरे (बायजाने एका रुपयाच्या नोटेला 'जहर' का म्हटले?) यांवर लेखी चाचणी घेणे.", tlm: "चाचणी पत्रिका", cce: "लेखी चाचणी", ref: "मुक्या प्राण्यांबद्दल कृतज्ञता व स्वाभिमानाचे मूल्य रुजले." },
+        ws: ["पैकूने बैलांना पोळ्याच्या दिवशी कसे सजविले?", "डॉक्टरीणबाईंनी बैलांची पूजा न करता पैकूला काय दिले व काय म्हटले?", "बायजाने एका रुपयाच्या नोटेला 'जहर' का म्हटले व पैकूने तिचे काय केले?", "संदर्भासह स्पष्टीकरण करा : 'बाई दारी देव आणले आहेत, पूजा करा!'", "वाक्यात उपयोग करा : (1) आडवे होणे (2) मोबदला चुकवणे."]
+      },
+      {
+        id: "m09", no: "9", cat: "padya", dept: "सामाजिक कविता", title: "दीप लाव तो", author: "कवी : कुसुमाग्रज (वि. वा. शिरवाडकर, पृ. 38–41)", method: "गायन व वैचारिक विश्लेषण",
+        obj: "शस्त्र (युद्ध) व शास्त्र (विज्ञान) यांपेक्षाही माणुसकी व प्रेमाचा दीप जगाला स्वर्ग बनवू शकतो (मूल्य : माणुसकी, आशा) हा संदेश समजून घेणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "परिसंवाद", act: "ज्ञानपीठ विजेते कुसुमाग्रज (27 फेब्रुवारी – मराठी भाषा दिन) यांचा परिचय देऊन 'जगात शांतता कशामुळे नांदेल?' यावर चर्चा करणे.", tlm: "कुसुमाग्रजांचे चित्र, फलक", cce: "तोंडी चर्चा", ref: "विद्यार्थ्यांनी शस्त्र व विज्ञानाचे फायदे-तोटे सांगितले." },
+        e2: { skill: "श्रवण, गायन", m: "गायन पद्धती", act: "'दीप लाव तो' या संवादात्मक कवितेचे अर्थपूर्ण व प्रभावी गायन करून विद्यार्थ्यांकडून समूहगायन घेणे.", tlm: "पाठ्यपुस्तक", cce: "गायन निरीक्षण", ref: "देव व मानवातील संवाद विद्यार्थ्यांना लगेच समजला." },
+        e3: { skill: "आकलन", m: "विश्लेषण", act: "शस्त्र (समरांगण व रक्तपात), शास्त्र (ज्ञानसाधना) मिळूनही स्वर्ग स्वप्नातच का राहिला आणि माणुसपणाचा दीप म्हणजे काय हे स्पष्ट करणे.", tlm: "फलक, शब्दपट्ट्या", cce: "चर्चा व प्रश्नोत्तर", ref: "शस्त्र-शास्त्र-माणुसकी यांतील फरक स्पष्ट झाला." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "रिकाम्या जागा, समानार्थी शब्द (तिमिर, मंगल, हताश, मानव, दीप), संदर्भासह स्पष्टीकरण व कवितेचा सारांश लिहून घेणे.", tlm: "वह्या, फलक", cce: "लेखन तपासणी", ref: "विद्यार्थ्यांनी कवितेचा सारांश स्वतःच्या शब्दांत लिहिला." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "दोन-तीन व पाच-सहा वाक्यांत उत्तरे (शस्त्र व शास्त्र मिळवूनही मानव हताश का झाला?) यांवर चाचणी घेणे.", tlm: "स्वाध्याय पत्रिका", cce: "लेखी मूल्यमापन", ref: "माणुसकी, दया व विश्वशांततेचे मूल्य रुजले." },
+        ws: ["प्रथमतः व दुसऱ्यांदा मानवाने देवाकडे कोणते वरदान मागितले?", "शस्त्र व शास्त्र मिळवूनही मानव हताश का झाला?", "देवाने शेवटी मानवाला कोणता दीप लावायला सांगितले?", "समानार्थी शब्द लिहा : (1) तिमिर (2) मंगल (3) हताश (4) दीप.", "संदर्भासह स्पष्टीकरण करा : 'स्वर्ग परि स्वप्नातच राही.'"]
+      },
+      {
+        id: "m10", no: "10", cat: "gadya", dept: "आत्मचरित्र", title: "रामेश्वरम्‌चे दिवस", author: "लेखक : डॉ. ए. पी. जे. अब्दुल कलाम | अनुवाद : प्रा. माधुरी शानभाग (पृ. 42–50)", method: "चरित्रकथन व मूल्यचर्चा",
+        obj: "डॉ. कलामांचे बालपण, साधी राहणी, धर्मनिरपेक्षता, कष्टांतून पहिली कमाई आणि उच्च ध्येयासाठी केलेला त्याग समजावून घेणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "परिसंवाद", act: "'मिसाईल मॅन ऑफ इंडिया' व भारताचे 11 वे राष्ट्रपती डॉ. ए. पी. जे. अब्दुल कलाम यांचे चित्र दाखवून त्यांच्या कार्याबद्दल चर्चा करणे.", tlm: "डॉ. कलाम व 'अग्निपंख' पुस्तकाचे चित्र", cce: "तोंडी प्रश्न", ref: "विद्यार्थ्यांना कलामांच्या बालपणाबद्दल जाणून घेण्याची उत्सुकता लागली." },
+        e2: { skill: "वाचन, श्रवण", m: "प्रकटवाचन", act: "रामेश्वरम् मधील घर, वडील जैनुलाबदीन, जलालुद्दीन व शमसुद्दीन यांचा प्रभाव, 'दिनमणी' वर्तमानपत्रे वाटणे व शाळेतील प्रसंग वाचून दाखवणे.", tlm: "पाठ्यपुस्तक, भारत नकाशा", cce: "वाचन निरीक्षण", ref: "कष्टाने मिळवलेल्या पहिल्या कमाईचा प्रसंग मुलांना खूप आवडला." },
+        e3: { skill: "आकलन", m: "विश्लेषण", act: "लक्ष्मणशास्त्री व शिवसुब्रमण्यम अय्यर यांनी दिलेला सामाजिक समतेचा संदेश आणि रामेश्वरम् सोडताना वडिलांनी दिलेला मोलाचा सल्ला स्पष्ट करणे.", tlm: "फलक, शब्दपट्ट्या", cce: "चर्चा व प्रश्नोत्तर", ref: "धर्मनिरपेक्षता व स्वावलंबनाचे महत्त्व समजले." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "रिकाम्या जागा, संदर्भासह स्पष्टीकरण ('कलाम, तुला मोठं व्हायचंय...'), वाक्प्रचार (मात करणे, गुण्यागोविंदाने राहणे, रस असणे, हातभार लागणे) सोडवणे.", tlm: "वह्या, फलक", cce: "कृती तपासणी", ref: "वाक्प्रचार व संदर्भासह स्पष्टीकरण अचूक केले." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "चार-पाच व सात-आठ वाक्यांत उत्तरे (कलाम व जलालुद्दीन यांच्या मैत्रीचे वर्णन) व 'डॉ. कलामांचे विद्यार्थी जीवन' निबंध घेणे.", tlm: "चाचणी पत्रिका", cce: "लेखी चाचणी", ref: "जिद्द, साधेपणा व सर्वधर्मसमभावाची मूल्ये रुजली." },
+        ws: ["डॉ. कलामांच्या आई-वडिलांकडून व जलालुद्दीनकडून कलामांनी कोणते गुण शिकले?", "कलामांना आयुष्यातील पहिली कमाई कशी मिळाली?", "पाचवीत असताना शाळेत कलामांबाबत कोणता प्रसंग घडला व लक्ष्मणशास्त्रींनी काय केले?", "संदर्भासह स्पष्टीकरण करा : 'माफी मागा किंवा गाव सोडून जा.'", "वाक्यात उपयोग करा : (1) गुण्यागोविंदाने राहणे (2) हातभार लागणे."]
+      },
+      {
+        id: "m11", no: "11", cat: "padya", dept: "ग्रामीण कविता", title: "पाहुणचार", author: "कवी : ग. ल. ठोकळ (पृ. 51–55)", method: "ग्रामीण बोली गायन व चर्चा",
+        obj: "गरीब शेतकऱ्याच्या घरचे प्रेमळ आतिथ्य (मूल्य : आतिथ्य) व ग्रामीण बोलीभाषेचा गोडवा अनुभवणे; ग्रामीण शब्दांचे प्रमाणभाषेतील रूप शिकणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "चर्चात्मक", act: "'आपल्या घरी पाहुणे आल्यावर आपण त्यांचे स्वागत कसे करतो?' यावर चर्चा करून ग्रामीण पाहुणचाराचे चित्र दाखवणे.", tlm: "ग्रामीण घराचे चित्र", cce: "अनुभव कथन", ref: "मुलांनी घरच्या पाहुणचाराचे अनुभव सांगितले." },
+        e2: { skill: "श्रवण, गायन", m: "गायन पद्धती", act: "ग. ल. ठोकळ यांच्या 'पाहुणचार' कवितेचे ग्रामीण ढंगात तालासुरात गायन करून विद्यार्थ्यांकडून म्हणवून घेणे.", tlm: "पाठ्यपुस्तक", cce: "गायन निरीक्षण", ref: "ग्रामीण शब्दांच्या उच्चारणाने वर्गात आनंद निर्माण झाला." },
+        e3: { skill: "आकलन, भाषाभ्यास", m: "स्पष्टीकरण", act: "पाव्हणं, गाठुडं, आंगुळ, सुगरण, कारभारीण, अपरूप, बेसन, मीठभाकर अर्थ सांगणे. भाषाभ्यास: ग्रामीण शब्दांचे प्रमाण मराठी रूप (लई–खूप, पगा–पहा, उजून–अजून, पृ. 55).", tlm: "बोली-प्रमाण शब्दतक्ता, फलक", cce: "चर्चा व प्रश्नोत्तर", ref: "ग्रामीण बोली व प्रमाणभाषेतील संबंध समजला." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "रिकाम्या जागा, जोडशब्द पूर्ण करणे (मीठ-भाकर, राम-राम), समानार्थी-विरुद्धार्थी शब्द, वाक्प्रचार व संदर्भासह स्पष्टीकरण सोडवणे.", tlm: "फलक, वह्या", cce: "कृती तपासणी", ref: "व्याकरण व शब्दसंग्रहाचा चांगला सराव झाला." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "कवितेचा अर्थ स्वतःच्या शब्दांत 7–8 ओळींत लिहिण्यास सांगून मूल्यमापन करणे.", tlm: "स्वाध्याय पत्रिका", cce: "लेखी मूल्यमापन", ref: "प्रेमळ आतिथ्यशीलता व माणुसकीचे मूल्य रुजले." },
+        ws: ["कारभाऱ्याने घरी आलेल्या पाहुण्याचे स्वागत कसे केले?", "जेवणात कोणकोणते पदार्थ होते व कोणता पदार्थ तिखट-चवदार होता?", "प्रमाण मराठीत लिहा : (1) लई (2) पगा (3) उजून (4) आंगुळ (5) बेसन.", "विरुद्धार्थी शब्द लिहा : (1) ओळख (2) गरीब (3) गोड (4) शेवट.", "'पाहुणचार' या कवितेचा सारांश 5 ते 6 वाक्यांत लिहा."]
+      },
+      {
+        id: "m12", no: "12", cat: "gadya", dept: "लघुनिबंध", title: "वाट चुकल्याचा आनंद", author: "लेखक : ना. सी. फडके (पृ. 56–60)", method: "ललित वाचन व निसर्ग वर्णन",
+        obj: "अनपेक्षितपणे वाट चुकल्यामुळे झालेल्या अद्भुत निसर्गदर्शनाचा (मूल्य : निसर्गप्रेम) आनंद घेणे; उत्प्रेक्षा व उपमा अलंकार शिकवणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "चर्चात्मक", act: "'महाबळेश्वर किंवा डोंगराळ सहलीला तुम्ही कधी गेला आहात का? कधी वाट चुकल्याचा अनुभव आला आहे का?' यावर गप्पा मारणे.", tlm: "महाबळेश्वर व इंद्रधनुष्याचे चित्र", cce: "अनुभव कथन", ref: "विद्यार्थ्यांनी प्रवासातील निसर्गानुभव सांगितले." },
+        e2: { skill: "वाचन, श्रवण", m: "प्रकटवाचन", act: "ना. सी. फडके यांचा परिचय देऊन महाबळेश्वरच्या बाजारातून बंगल्याकडे येताना झाडीत शिरल्याचा व काळे ढग-इंद्रधनुष्य दर्शनाचा प्रसंग वाचणे.", tlm: "पाठ्यपुस्तक", cce: "वाचन निरीक्षण", ref: "लघुनिबंधाच्या लालित्यपूर्ण भाषेचा आनंद मुलांना मिळाला." },
+        e3: { skill: "आकलन, व्याकरण", m: "विश्लेषण", act: "मळलेली वाट, अद्भुत निसर्गशोभा, क्षितिजावरील इंद्रधनुष्य स्पष्ट करणे. भाषाभ्यास: उत्प्रेक्षा अलंकार ('जणू मोठमोठी काळी विमाने...') व उपमा अलंकार (पृ. 60).", tlm: "अलंकार तक्ता, फलक", cce: "प्रश्नोत्तर", ref: "उत्प्रेक्षा व उपमा अलंकारातील फरक स्पष्ट झाला." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "बहुपर्यायी प्रश्न, संदर्भासह स्पष्टीकरण ('पुन्हा केव्हातरी वाट चुकावी अशी माझी इच्छा आहे'), व अलंकार ओळखून व्याख्या लिहिणे.", tlm: "वह्या, फलक", cce: "लेखन तपासणी", ref: "अलंकाराच्या व्याख्या अचूक लिहिल्या." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "चार-पाच व सात-आठ वाक्यांत उत्तरे (आकाशात ढग आल्यानंतरच्या दृश्याचे वर्णन) घेऊन लेखी मूल्यमापन करणे.", tlm: "चाचणी पत्रिका", cce: "लेखी चाचणी", ref: "निसर्गसौंदर्याची सूक्ष्म निरीक्षणदृष्टी विकसित झाली." },
+        ws: ["लेखक उजव्या हाताकडील झाडीत का घुसले?", "वाट चुकल्यामुळे लेखकाला कोणती अपूर्व निसर्गशोभा पाहायला मिळाली?", "क्षितिजावर इंद्रधनुष्य केव्हा व कसे प्रकट झाले?", "संदर्भासह स्पष्टीकरण करा : 'पुन्हा केव्हातरी वाट चुकावी अशी माझी इच्छा आहे.'", "अलंकार ओळखा : 'जणू मोठमोठी काळ्या काळ्या रंगाची विमानेच तेथे येऊन हवेत विसावा घेत होती.'"]
+      },
+      {
+        id: "m13", no: "13", cat: "padya", dept: "विभूती गौरव कविता", title: "माझी मुक्ताई", author: "कवयित्री : बहिणाबाई चौधरी (पृ. 61–64)", method: "खानदेशी बोली गायन व चर्चा",
+        obj: "दहा वर्षांच्या संत मुक्ताबाईंचे अलौकिक ज्ञान, चांगदेवांचे गर्वहरण व ज्ञानदेवांची ताटीच्या अभंगांनी काढलेली समजूत (मूल्य : विभूती गौरव) समजावणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "परिसंवाद", act: "संत ज्ञानेश्वर, निवृत्तीनाथ, सोपानदेव व मुक्ताबाई तसेच बहिणाबाई चौधरी यांची चित्रे दाखवून पूर्वज्ञान जागृत करणे.", tlm: "संतांची चित्रे, फलक", cce: "तोंडी प्रश्न", ref: "विद्यार्थ्यांनी बहिणाबाईंच्या अहिराणी/खानदेशी कवितेची ओळख करून घेतली." },
+        e2: { skill: "श्रवण, गायन", m: "गायन पद्धती", act: "'माझी मुक्ताई मुक्ताई, दहा वरसाचं लेकरू' या कवितेचे अहिराणी ढंगात भावपूर्ण गायन करून विद्यार्थ्यांकडून म्हणवून घेणे.", tlm: "पाठ्यपुस्तक, ध्वनिफीत", cce: "गायन निरीक्षण", ref: "खानदेशी बोलीचा लयबद्ध गोडवा विद्यार्थ्यांना भावला." },
+        e3: { skill: "आकलन", m: "स्पष्टीकरण", act: "चांगदेव योगी व ताटीचे अभंग या संदर्भांसह कळवळली, गहिवरले, असंगाशी संग, उबगले शब्दार्थ स्पष्ट करणे.", tlm: "शब्दार्थ तक्ता, फलक", cce: "चर्चा व प्रश्नोत्तर", ref: "संत मुक्ताईंचे थोरपण व ताटीच्या अभंगांचे महत्त्व समजले." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "रिकाम्या जागा, संदर्भासह स्पष्टीकरण ('चांगदेव योगीयानं तिले मानलं रे गुरू'), वाक्प्रचार (असंगाशी संग, कळवळणे, तोंड न पाहणे) सोडवणे.", tlm: "वह्या, फलक", cce: "कृती तपासणी", ref: "वाक्प्रचार व संदर्भ स्पष्टीकरण अचूक लिहिले." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "सात-आठ वाक्यांत उत्तरे (मुक्ताईने ज्ञानदेवांची समजूत कशी काढली?) यांवर लेखी चाचणी घेणे.", tlm: "स्वाध्याय पत्रिका", cce: "लेखी मूल्यमापन", ref: "संतांचा आदर, नम्रता व ज्ञानाचे महत्त्व रुजले." },
+        ws: ["चांगदेवांनी दहा वर्षांच्या मुक्ताईला आपले गुरू का मानले?", "ज्ञानदेव रागावून घरात दार बंद करून का बसले होते?", "मुक्ताईने ज्ञानदेवांची समजूत कशी काढली?", "संदर्भासह स्पष्टीकरण करा : 'असा भाग्यवंत भाऊ, त्याची मुक्ताई बहीण.'", "वाक्यात उपयोग करा : (1) असंगाशी संग (2) कळवळणे."]
+      },
+      {
+        id: "m14", no: "14", cat: "gadya", dept: "प्रवासवर्णन", title: "कर्नाटकातील काही शिल्पसुंदर स्थळे", author: "लेखक : प्रा. कृ. ब. निकुम्ब (पृ. 65–70)", method: "प्रवासवर्णन व चित्रप्रदर्शन",
+        obj: "विजयपुरा (विजापूर) येथील आदिलशाही स्थापत्य – जुम्मा मशीद, इब्राहिम रोझा, गोलघुमट व मेहेतर महल यांचा ऐतिहासिक व कलात्मक परिचय (मूल्य : कुतूहल) करून देणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "चित्रप्रदर्शन", act: "गोलघुमट, जुम्मा मशीद व इब्राहिम रोझा यांची छायाचित्रे दाखवून 'ही शिल्पसुंदर स्थळे कर्नाटकातील कोणत्या जिल्ह्यात आहेत?' असे विचारणे.", tlm: "विजयपुरा स्थळांची चित्रे, कर्नाटक नकाशा", cce: "तोंडी प्रश्न", ref: "विद्यार्थ्यांनी गोलघुमटाच्या प्रतिध्वनीबद्दल कुतूहल दाखवले." },
+        e2: { skill: "वाचन, श्रवण", m: "प्रकटवाचन", act: "प्रा. कृ. ब. निकुम्ब यांचा परिचय देऊन गुलाबांच्या विविधतेपासून सुरू होणारे विजापूरचे प्रवासवर्णन प्रकटवाचनाने घेणे.", tlm: "पाठ्यपुस्तक", cce: "वाचन निरीक्षण", ref: "प्रवासवर्णनाची रंजक शैली मुलांना आवडली." },
+        e3: { skill: "आकलन", m: "विश्लेषण", act: "जुम्मा मशीद (सुवर्णाक्षरातील कुराण), इब्राहिम रोझा (ताजमहालला प्रेरणा देणारे कोरीवकाम व आधारविहीन छत), गोलघुमट (प्रतिध्वनी चमत्कार) व मेहेतर महल स्पष्ट करणे.", tlm: "स्थळ वैशिष्ट्य तक्ता, फलक", cce: "चर्चा व प्रश्नोत्तर", ref: "चारही वास्तूंची स्वतंत्र वैशिष्ट्ये स्पष्ट झाली." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "रिकाम्या जागा, जोड्या जुळवणे (पृ. 70), संदर्भासह स्पष्टीकरण व कर्नाटकातील इतर शिल्पसुंदर स्थळांची (हम्पी, बदामी, बेलूर) माहिती संकलित करणे.", tlm: "वह्या, संदर्भ चित्रे", cce: "गटकार्य तपासणी", ref: "ऐतिहासिक वारशाबद्दल माहिती समृद्ध झाली." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "पाच-सहा व सात-आठ वाक्यांत उत्तरे (गोलघुमटात कोणता चमत्कार घडतो? इब्राहिम रोझाची वैशिष्ट्ये) यांवर लेखी चाचणी घेणे.", tlm: "चाचणी पत्रिका", cce: "लेखी चाचणी", ref: "ऐतिहासिक शिल्पकलेचा अभिमान व जतन करण्याची जाणीव झाली." },
+        ws: ["विजयपुरा (विजापूर) येथील चार प्रमुख शिल्पसुंदर वास्तू कोणत्या?", "इब्राहिम रोझा या वास्तूच्या रचनेतील कोणता चमत्कार आजही कोडे आहे?", "गोलघुमटातील सज्जामध्ये प्रतिध्वनीचा कोणता चमत्कार घडतो?", "जोड्या जुळवा : इब्राहिम रोझा, गोलघुमट, मेहेतर महल, जुम्मा मशीद.", "विजयपुरा येथील गोलघुमटाचे 5 ते 6 वाक्यांत वर्णन करा."]
+      },
+      {
+        id: "m15", no: "15", cat: "gadya", dept: "वैचारिक लेख", title: "भाषा बांधव्य", author: "लेखिका : डॉ. संध्या देशपांडे (पृ. 71–76)", method: "तुलनात्मक चर्चा व विश्लेषण",
+        obj: "मराठी आणि कन्नड या शेजारी भाषांचे भाषिक, सांस्कृतिक, सण-उत्सव व संतसाहित्यातील अतूट बंधुत्व (मूल्य : भाषाबंधुता) समजावून सांगणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "परिसंवाद", act: "'अण्णा, आप्पा, अक्का, तूप, अडकित्ता' असे मराठी व कन्नडमध्ये समान असलेले शब्द विचारून दोन्ही भाषांतील जवळीक दाखवणे.", tlm: "मराठी-कन्नड समान शब्दतक्ता", cce: "तोंडी चर्चा", ref: "विद्यार्थ्यांनी अनेक समान शब्द व म्हणी सांगितल्या." },
+        e2: { skill: "वाचन, श्रवण", m: "प्रकटवाचन", act: "डॉ. संध्या देशपांडे यांचा परिचय देऊन शब्दसाम्य, म्हणी, गुढीपाडवा-युगादी, पंढरपूरची वारी, बसवेश्वर, पुरंदरदास व ज्ञानेश्वर या भागांचे वाचन घेणे.", tlm: "पाठ्यपुस्तक", cce: "वाचन निरीक्षण", ref: "दोन्ही राज्यांतील सांस्कृतिक एकात्मता पाहून मुले खुश झाली." },
+        e3: { skill: "आकलन", m: "विश्लेषण", act: "नाचता येईना अंगण वाकडे (कुणियुलिक्के बरलिल्ला अंगळ डोंकु), संत एकनाथ-पुरंदरदास, कुमारव्यास व ज्ञानेश्वरांवरील परस्पर भाषिक प्रभाव स्पष्ट करणे.", tlm: "फलक, तुलनात्मक तक्ता", cce: "चर्चा व प्रश्नोत्तर", ref: "भाषिक सहिष्णुता व एकात्मतेचा अर्थ कळला." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "मराठी-कन्नड समान शब्दांची व म्हणींची यादी तयार करणे, सण-उत्सव तुलना तक्ता व पाठावरील स्वाध्याय सोडवून घेणे.", tlm: "चार्ट पेपर, वह्या", cce: "गटकार्य निरीक्षण", ref: "द्विभाषिक शब्दसंग्रह व सांस्कृतिक आकलन वाढले." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "पाठावरील दोन-तीन व पाच-सहा वाक्यांत उत्तरे घेऊन लेखी चाचणीद्वारे मूल्यमापन करणे.", tlm: "स्वाध्याय पत्रिका", cce: "लेखी मूल्यमापन", ref: "भाषाबंधुता व प्रादेशिक सौहार्द यांचे मूल्य रुजले." },
+        ws: ["मराठी व कन्नड भाषेत समान वापरले जाणारे कोणतेही 4 शब्द लिहा.", "गुढीपाडवा व युगादी हे सण दोन्ही राज्यांत कोणत्या समान पद्धतीने साजरे होतात?", "मराठी व कन्नड संतांच्या परस्पर स्नेहाची कोणती उदाहरणे पाठात दिली आहेत?", "पाठात आलेली मराठी व कन्नडमधील एक समान म्हण लिहा."]
+      },
+      {
+        id: "m16", no: "16", cat: "padya", dept: "लोकगीत", title: "भाऊराया", author: "लोकगीत (पृ. 77–78)", method: "लोकगीत गायन व भावचर्चा",
+        obj: "बहीण-भावाच्या प्रेमळ नात्याचा व लोकसाहित्याच्या सहजसुंदर परंपरेचा (ओवी/लोकगीत) रसास्वाद घेणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "चर्चात्मक", act: "रक्षाबंधन, भाऊबीज व सासर-माहेरच्या ओव्यांबद्दल चर्चा करून लोकगीतांची ओळख करून देणे.", tlm: "रक्षाबंधन / भाऊबीज चित्र", cce: "तोंडी चर्चा", ref: "विद्यार्थ्यांनी घरच्या ओव्या व लोकगीतांची माहिती सांगितली." },
+        e2: { skill: "श्रवण, गायन", m: "लोकगीत गायन", act: "'भाऊराया' या लोकगीताचे पारंपरिक, गोड चालीवर आदर्श गायन करून विद्यार्थ्यांकडून समूहगायन घेणे.", tlm: "पाठ्यपुस्तक", cce: "गायन निरीक्षण", ref: "लोकगीताच्या मधुर लयीमुळे वर्गात प्रसन्नता आली." },
+        e3: { skill: "आकलन", m: "स्पष्टीकरण", act: "लोकगीताची वैशिष्ट्ये (मौखिक परंपरा, सहज भाषा, जिव्हाळा) व बहिणीच्या मनातील भाऊरायाबद्दलची ओढ स्पष्ट करणे.", tlm: "फलक, शब्दपट्ट्या", cce: "चर्चा व प्रश्नोत्तर", ref: "लोकसाहित्यातील भावनिक श्रीमंती समजली." },
+        e4: { skill: "लेखन, संकलन", m: "संकलन कृती", act: "स्वाध्याय प्रश्नांची चर्चा करून आजी-आईकडून ऐकलेल्या दोन लोकगीतांच्या ओळी वहीत संकलित करून आणण्यास सांगणे.", tlm: "वह्या", cce: "संकलन तपासणी", ref: "पारंपरिक लोकसाहित्याबद्दल आस्था निर्माण झाली." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "कवितेवरील आकलन प्रश्न व भावार्थ लेखनावर आधारित मूल्यमापन घेणे.", tlm: "स्वाध्याय पत्रिका", cce: "लेखी चाचणी", ref: "कौटुंबिक जिव्हाळा व लोकसंस्कृतीचा आदर वाढला." },
+        ws: ["लोकगीत म्हणजे काय व त्याची दोन वैशिष्ट्ये लिहा.", "'भाऊराया' या लोकगीतात बहिणीने भावाविषयी कोणती भावना व्यक्त केली आहे?", "तुम्हाला माहीत असलेल्या एखाद्या लोकगीताच्या 4 ओळी लिहा."]
+      },
+      {
+        id: "m17", no: "17", cat: "gadya", dept: "वैचारिक लेख", title: "तीन मुद्दे", author: "संत गाडगेमहाराज (पृ. 79–81)", method: "कीर्तनशैली वाचन व चर्चा",
+        obj: "संत गाडगेमहाराजांचे स्वच्छता, अज्ञान-अंधश्रद्धा निर्मूलन, व्यसनमुक्ती व दशसूत्रीचे विचार विद्यार्थ्यांच्या आचरणात आणणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "परिसंवाद", act: "संत गाडगेमहाराजांचे (हातात खराटा व गाडगे) चित्र दाखवून 'गाडगेबाबांच्या समाजप्रबोधनाचे कार्य कोणते?' यावर चर्चा करणे.", tlm: "संत गाडगेमहाराज चित्र", cce: "तोंडी प्रश्न", ref: "विद्यार्थ्यांनी स्वच्छता अभियानाबद्दल माहिती सांगितली." },
+        e2: { skill: "वाचन, श्रवण", m: "प्रकटवाचन", act: "पाठाचे लोकभाषेतील ओघवते प्रकटवाचन करून गाडगेमहाराजांनी सांगितलेले 'तीन मुद्दे' विद्यार्थ्यांना शोधण्यास सांगणे.", tlm: "पाठ्यपुस्तक", cce: "वाचन निरीक्षण", ref: "गाडगेबाबांच्या सोप्या व थेट भाषेचा प्रभाव पडला." },
+        e3: { skill: "आकलन", m: "विश्लेषण", act: "शिक्षण, स्वच्छता, व्यसनमुक्ती, कर्जबाजारीपणा टाळणे आणि दीनदुबळ्यांची सेवा हाच खरा देव हे विचार स्पष्ट करणे.", tlm: "दशसूत्री तक्ता, फलक", cce: "चर्चा व प्रश्नोत्तर", ref: "वैचारिक पाठाचे आकलन व सामाजिक भान वाढले." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "स्वाध्यायातील प्रश्नोत्तरे, संदर्भासह स्पष्टीकरण व संत गाडगेमहाराजांच्या दशसूत्रीचा तक्ता वर्गात लावणे.", tlm: "चार्ट पेपर, वह्या", cce: "गटकार्य निरीक्षण", ref: "विद्यार्थ्यांनी स्वच्छता व व्यसनमुक्तीवर विचार मांडले." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "पाठावरील तीन मुद्दे व त्यांचा दैनंदिन जीवनातील उपयोग यांवर लेखी चाचणी घेणे.", tlm: "चाचणी पत्रिका", cce: "लेखी मूल्यमापन", ref: "स्वच्छता, समता व वैज्ञानिक विचारसरणी रुजली." },
+        ws: ["संत गाडगेमहाराजांनी आपल्या कीर्तनातून कोणते तीन महत्त्वाचे मुद्दे मांडले?", "अंधश्रद्धा व व्यसनांचे दुष्परिणाम थोडक्यात लिहा.", "संत गाडगेमहाराजांचा समाजसेवेचा संदेश तुमच्या शब्दांत 5 ओळींत लिहा."]
+      },
+      {
+        id: "m18", no: "18", cat: "padya", dept: "दलित कविता", title: "माय", author: "कवी : वामन निंबाळकर (पृ. 82–84)", method: "भावपूर्ण वाचन व चर्चा",
+        obj: "कष्टकरी, दारिद्र्याशी झगडणाऱ्या आईचे अपार कष्ट, त्याग आणि मातृप्रेमाची जाणीव विद्यार्थ्यांच्या मनात जागृत करणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "परिसंवाद", act: "'आई आपल्या मुलांसाठी कोणकोणते कष्ट उपसते?' यावर संवेदनशील चर्चा करून कवी वामन निंबाळकर यांचा परिचय देणे.", tlm: "फलक, चित्र", cce: "अनुभव कथन", ref: "विद्यार्थ्यांनी आईच्या कष्टांबद्दल कृतज्ञता व्यक्त केली." },
+        e2: { skill: "श्रवण, वाचन", m: "भावपूर्ण वाचन", act: "'माय' या कवितेचे अंतःकरणाला भिडणारे प्रकटवाचन करून विद्यार्थ्यांकडून समूहाने अर्थपूर्ण वाचन घेणे.", tlm: "पाठ्यपुस्तक", cce: "वाचन निरीक्षण", ref: "कवितेतील वास्तववादी चित्रणाने वर्ग स्तब्ध व संवेदनशील झाला." },
+        e3: { skill: "आकलन", m: "विश्लेषण", act: "मोळी विकणारी माय, अंगावरील फाटके कपडे, मुलांच्या पोटाची काळजी व प्रतिकूल परिस्थितीतील संघर्ष स्पष्ट करणे.", tlm: "फलक, शब्दपट्ट्या", cce: "चर्चा व प्रश्नोत्तर", ref: "कवितेचा सामाजिक व भावनिक आशय नीट समजला." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "संदर्भासह स्पष्टीकरण, समानार्थी-विरुद्धार्थी शब्द व 'माझी माय' यावर 8 ओळी भावपूर्ण लेखन घेणे.", tlm: "वह्या", cce: "लेखन तपासणी", ref: "विद्यार्थ्यांनी अत्यंत हृदयस्पर्शी लेखन केले." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "कवितेवरील दोन-तीन व पाच-सहा वाक्यांत उत्तरे घेऊन मूल्यमापन करणे.", tlm: "स्वाध्याय पत्रिका", cce: "लेखी चाचणी", ref: "मातृभक्ती व कष्टकरी वर्गाबद्दल आदरभाव निर्माण झाला." },
+        ws: ["'माय' या कवितेचे कवी कोण आहेत?", "कवितेतील माय आपल्या मुलांचे पोट भरण्यासाठी कोणते कष्ट करते?", "कवितेतून आईच्या कोणत्या गुणांचे दर्शन घडते?", "कवितेचा भावार्थ तुमच्या शब्दांत 5 ते 6 वाक्यांत लिहा."]
+      },
+      {
+        id: "m19", no: "19", cat: "gadya", dept: "पत्रलेखन", title: "आलोकाबाईस पत्र", author: "लेखक : विनायक नरहर भावे (आचार्य विनोबा भावे, पृ. 85–89)", method: "पत्रवाचन व लेखन प्रात्यक्षिक",
+        obj: "आचार्य विनोबा भावे यांच्या चिंतनशील पत्रातून साधेपणा, स्वाध्याय, सेवाभाव समजावणे; औपचारिक व अनौपचारिक पत्रलेखनाची पद्धत शिकवणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "चर्चात्मक", act: "'तुम्ही कधी आजी-आजोबा किंवा मित्राला पत्र लिहिले आहे का? पत्राचे मुख्य भाग कोणते?' यावर चर्चा करून विनोबा भावे यांचा परिचय देणे.", tlm: "आंतरदेशीय पत्र / पोस्टकार्ड नमुना, विनोबा चित्र", cce: "तोंडी प्रश्न", ref: "विद्यार्थ्यांनी पत्रलेखनाचे घटक सांगितले." },
+        e2: { skill: "वाचन, श्रवण", m: "प्रकटवाचन", act: "'आलोकाबाईस पत्र' या पाठाचे शांत व अर्थपूर्ण वाचन करून पत्रातील मायना, मजकूर व समारोप पाहण्यास सांगणे.", tlm: "पाठ्यपुस्तक", cce: "वाचन निरीक्षण", ref: "विनोबांच्या पत्रातील साधेपणा व प्रेमळपणा भावला." },
+        e3: { skill: "आकलन, लेखन", m: "विश्लेषण", act: "पत्रातील जीवनमूल्ये, शब्दांचे अर्थ आणि अनौपचारिक पत्राचा आदर्श आराखडा (दिनांक, मायना, विषय/मजकूर, समारोप, पत्ता) फलकावर स्पष्ट करणे.", tlm: "पत्रलेखन आराखडा तक्ता", cce: "चर्चा व प्रश्नोत्तर", ref: "पत्रलेखनाचा अचूक नमुना विद्यार्थ्यांना समजला." },
+        e4: { skill: "लेखन", m: "सराव कृती", act: "पाठावरील स्वाध्याय सोडवून विद्यार्थ्यांकडून आपल्या मित्राला/नातेवाईकाला एक अनौपचारिक पत्र लिहून घेणे.", tlm: "वह्या", cce: "पत्रलेखन तपासणी", ref: "विद्यार्थ्यांनी योग्य मायन्यासह स्वतःचे पत्र लिहिले." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर व पत्रलेखन", act: "पाठावरील प्रश्नांची उत्तरे व एका नवीन विषयावर पत्रलेखन घेऊन मूल्यमापन करणे.", tlm: "चाचणी पत्रिका", cce: "लेखी मूल्यमापन", ref: "पत्रलेखन कौशल्य व वैचारिक प्रगल्भता वाढली." },
+        ws: ["'आलोकाबाईस पत्र' या पाठाचे लेखक कोण आहेत?", "पत्रातून लेखकाने कोणता महत्त्वाचा विचार व्यक्त केला आहे?", "अनौपचारिक पत्राचे मुख्य घटक कोणते?", "तुमच्या मित्राला/मैत्रिणीला शाळेतील वार्षिक स्नेहसंमेलनाबद्दल माहिती देणारे पत्र लिहा."]
+      },
+      {
+        id: "m20", no: "20", cat: "padya", dept: "पंडिती काव्य", title: "गोपाळकाला", author: "पंडिती काव्य (पृ. 90–93)", method: "पद्यगायन व अर्थविश्लेषण",
+        obj: "मराठीतील 'पंडिती काव्य' परंपरेची, श्रीकृष्ण व सवंगड्यांच्या गोपाळकाला क्रीडेची आणि समरसतेची ओळख करून देणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "परिसंवाद", act: "गोकुळाष्टमी, दहीहंडी व गोपाळकाला या उत्सवाबद्दल चर्चा करून 'पंडिती काव्य म्हणजे काय?' याची प्राथमिक ओळख देणे.", tlm: "गोपाळकाला प्रसंग चित्र", cce: "तोंडी चर्चा", ref: "विद्यार्थ्यांनी दहीहंडी व गोपाळकाल्याचे अनुभव सांगितले." },
+        e2: { skill: "श्रवण, गायन", m: "गायन पद्धती", act: "'गोपाळकाला' या पंडिती काव्याचे छंदबद्ध व स्पष्ट उच्चारांसह वाचन-गायन करून विद्यार्थ्यांकडून म्हणवून घेणे.", tlm: "पाठ्यपुस्तक", cce: "गायन निरीक्षण", ref: "पंडिती काव्यातील लय व यमकाची गंमत मुलांना जाणवली." },
+        e3: { skill: "आकलन", m: "स्पष्टीकरण", act: "पंडिती काव्यातील संस्कृतप्रचुर शब्द, यमक-अनुप्रास सौंदर्य आणि श्रीकृष्ण व गोपबाळांची एकत्रित भोजनाची समता स्पष्ट करणे.", tlm: "शब्दार्थ तक्ता, फलक", cce: "चर्चा व प्रश्नोत्तर", ref: "कठीण पद्याचा अर्थ सोप्या मराठीत समजला." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "स्वाध्यायातील प्रश्नोत्तरे, समानार्थी शब्द, संदर्भासह स्पष्टीकरण व काव्यातील अलंकार शोधून लिहिणे.", tlm: "वह्या, फलक", cce: "लेखन तपासणी", ref: "काव्यविश्लेषण क्षमता विकसित झाली." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "कवितेवरील एका वाक्यात व तीन-चार वाक्यांत उत्तरे घेऊन मूल्यमापन करणे.", tlm: "स्वाध्याय पत्रिका", cce: "लेखी चाचणी", ref: "समता, स्नेहभाव व प्राचीन काव्याची आवड निर्माण झाली." },
+        ws: ["'गोपाळकाला' हा कोणत्या साहित्यप्रकारातील पाठ आहे?", "श्रीकृष्ण व गोपबाळांनी एकत्र येऊन गोपाळकाला कसा साजरा केला?", "गोपाळकाल्यातून कोणते सामाजिक मूल्य दिसून येते?", "काव्यातील कोणत्याही 3 कठीण शब्दांचे अर्थ लिहा."]
+      },
+      {
+        id: "m21", no: "21", cat: "gadya", dept: "बखर वाङ्मय", title: "शनिवार वाड्यात कात्रजचे पाणी", author: "लेखक : कृ. वि. सोहनी (पेशव्यांची बखर, पृ. 94–97)", method: "ऐतिहासिक वाचन व चर्चा",
+        obj: "मराठीतील 'बखर वाङ्मय' प्रकाराची ओळख करून देणे; पेशवेकालीन पुणे शहराची अद्भुत जलव्यवस्थापन अभियांत्रिकी (कात्रज तलाव ते शनिवारवाडा) समजावणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "परिसंवाद", act: "पुण्यातील शनिवारवाड्याचे चित्र दाखवून 'पूर्वी वीज व पंप नसताना किल्ल्यात व वाड्यात पाणी कसे आणले जात असे?' असा प्रश्न विचारणे.", tlm: "शनिवारवाडा चित्र, पुणे नकाशा", cce: "तोंडी प्रश्न", ref: "प्राचीन जलव्यवस्थापनाबद्दल विद्यार्थ्यांमध्ये कुतूहल वाढले." },
+        e2: { skill: "वाचन, श्रवण", m: "प्रकटवाचन", act: "कृष्णाजी विनायक सोहनी यांच्या 'पेशव्यांची बखर' मधील उताऱ्याचे स्पष्ट वाचन करून प्राचीन बखर भाषेची ओळख करून देणे.", tlm: "पाठ्यपुस्तक", cce: "वाचन निरीक्षण", ref: "बखर भाषेची ऐतिहासिक लकब मुलांना वेगळी व रंजक वाटली." },
+        e3: { skill: "आकलन", m: "विश्लेषण", act: "नानासाहेब पेशवे यांच्या काळातील कात्रजचा तलाव, भूमिगत नळ (उच्छ्वास), हौद व कारंजी यांची रचना आणि प्राचीन मराठी शब्द स्पष्ट करणे.", tlm: "जलवाहिनी आकृती, फलक", cce: "चर्चा व प्रश्नोत्तर", ref: "पेशवेकालीन अभियांत्रिकी कौशल्याची माहिती मिळाली." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "बखर शब्दांचे आधुनिक मराठी अर्थ लिहिणे, संदर्भासह स्पष्टीकरण व जलसंधारणाच्या प्राचीन-आधुनिक पद्धतींची तुलना करणे.", tlm: "फलक, वह्या", cce: "गटकार्य तपासणी", ref: "ऐतिहासिक भाषेचा अर्थ लावण्याचे कौशल्य वाढले." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "पाठावरील एका वाक्यात व चार-पाच वाक्यांत उत्तरे घेऊन लेखी चाचणीद्वारे मूल्यमापन करणे.", tlm: "चाचणी पत्रिका", cce: "लेखी चाचणी", ref: "ऐतिहासिक वारसा व जलसंवर्धनाचे महत्त्व समजले." },
+        ws: ["'बखर वाङ्मय' म्हणजे काय व या पाठाचे लेखक कोण आहेत?", "कात्रज तलावातून शनिवारवाड्यात पाणी कशा प्रकारे आणले गेले?", "प्राचीन काळातील जलव्यवस्थापनाचे वैशिष्ट्य थोडक्यात लिहा.", "बखर भाषेतील कोणत्याही 3 शब्दांचे आजचे प्रमाण मराठी अर्थ लिहा."]
+      },
+      {
+        id: "m22", no: "22", cat: "padya", dept: "प्राचीन काव्य (संत वाणी)", title: "संत वाणी (संत कान्होपात्रा, शेख महंमद)", author: "संत कान्होपात्रा, संत शेख महंमद (पृ. 98–101)", method: "अभंग गायन व विश्लेषण",
+        obj: "संत कान्होपात्रा यांची उत्कट भक्ती व संत शेख महंमद यांचा सर्वधर्मसमभाव व आध्यात्मिक संदेश (प्राचीन काव्य) समजावून सांगणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "परिसंवाद", act: "वारकरी संप्रदायातील विविध जाती-धर्मांतील संतांचा उल्लेख करून 'संत साहित्याने समाजाला कोणता संदेश दिला?' यावर चर्चा करणे.", tlm: "संतांची चित्रे, अभंग तक्ता", cce: "तोंडी चर्चा", ref: "संतांच्या समतेच्या विचारांबद्दल आदरभाव दिसून आला." },
+        e2: { skill: "श्रवण, गायन", m: "अभंग गायन", act: "संत कान्होपात्रा व संत शेख महंमद यांच्या अभंगांचे तालासुरात गायन करून विद्यार्थ्यांकडून समूहगायन घेणे.", tlm: "पाठ्यपुस्तक, टाळ", cce: "गायन निरीक्षण", ref: "भक्तिमय वातावरणात अभंगांचे स्पष्ट उच्चारण झाले." },
+        e3: { skill: "आकलन", m: "स्पष्टीकरण", act: "दोन्ही संतांचा परिचय देऊन अभंगांतील कठीण शब्द, दृष्टान्त व सर्वधर्मसमभाव-भक्तीचा भावार्थ स्पष्ट करणे.", tlm: "शब्दार्थ तक्ता, फलक", cce: "चर्चा व प्रश्नोत्तर", ref: "संत कान्होपात्रा व शेख महंमद यांचे विचार स्पष्ट झाले." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "अभंगांवरील स्वाध्याय, संदर्भासह स्पष्टीकरण, समानार्थी शब्द व दोन्ही अभंगांचा मध्यवर्ती विचार वहीत लिहून घेणे.", tlm: "वह्या, फलक", cce: "लेखन तपासणी", ref: "अभंग भावार्थ स्वतःच्या शब्दांत मांडता आला." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "अभंगांवरील प्रश्नोत्तरे व भावार्थ लेखनावर आधारित लेखी चाचणी घेणे.", tlm: "स्वाध्याय पत्रिका", cce: "लेखी मूल्यमापन", ref: "भक्ती, समता व सर्वधर्मसहिष्णुतेचे मूल्य रुजले." },
+        ws: ["संत कान्होपात्रा यांनी आपल्या अभंगातून विठ्ठलाला कोणती आर्त विनवणी केली आहे?", "संत शेख महंमद यांच्या अभंगातून कोणता आध्यात्मिक संदेश मिळतो?", "संत वाणीतील कोणत्याही 3 प्राचीन शब्दांचे अर्थ लिहा.", "दोन्हीपैकी एका अभंगाचा भावार्थ 4 ते 5 वाक्यांत लिहा."]
+      },
+      {
+        id: "m23", no: "23", cat: "gadya", dept: "प्राचीन गद्य", title: "म्हाइंभटी शिक्षापणी", author: "लेखक : म्हाइंभट (लीळाचरित्र, पृ. 102–104)", method: "प्राचीन गद्य वाचन व स्पष्टीकरण",
+        obj: "मराठीतील आद्य चरित्रग्रंथ 'लीळाचरित्र' व महानुभाव पंथातील प्राचीन गद्यशैलीची ओळख करून देणे; भूतदया, संयम व नीतिमूल्ये शिकणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "परिसंवाद", act: "'मराठीतील पहिला गद्य चरित्रग्रंथ कोणता?' असे विचारून श्री चक्रधर स्वामी व म्हाइंभट यांचा परिचय करून देणे.", tlm: "प्राचीन साहित्य कालरेषा, फलक", cce: "तोंडी प्रश्न", ref: "मराठी भाषेच्या प्राचीन इतिहासाबद्दल कुतूहल जागले." },
+        e2: { skill: "वाचन, श्रवण", m: "प्रकटवाचन", act: "'म्हाइंभटी शिक्षापणी' या प्राचीन गद्याचे स्पष्ट व अर्थवाही वाचन करून यादवकालीन मराठी भाषेची ओळख करून देणे.", tlm: "पाठ्यपुस्तक", cce: "वाचन निरीक्षण", ref: "प्राचीन मराठी वाक्यरचनेचे वेगळेपण मुलांना समजले." },
+        e3: { skill: "आकलन", m: "विश्लेषण", act: "यादवकालीन मराठी शब्द व त्यांचे आजचे रूप फलकावर लिहून पाठातील नैतिक उपदेश (शिक्षापणी) सोप्या मराठीत समजावून सांगणे.", tlm: "प्राचीन-आधुनिक शब्दतक्ता, फलक", cce: "चर्चा व प्रश्नोत्तर", ref: "प्राचीन गद्याचा आशय व बोध नीट समजला." },
+        e4: { skill: "लेखन, संभाषण", m: "गटकार्य", act: "पाठावरील स्वाध्याय, प्राचीन शब्दांचे आधुनिक अर्थ व पाठातील मुख्य उपदेशाचे मुद्दे वहीत लिहून घेणे.", tlm: "वह्या", cce: "लेखन तपासणी", ref: "प्राचीन गद्य आकलन कौशल्य विकसित झाले." },
+        e5: { skill: "लेखन", m: "प्रश्नोत्तर", act: "पाठावरील एका वाक्यात व तीन-चार वाक्यांत उत्तरे घेऊन लेखी मूल्यमापन करणे.", tlm: "चाचणी पत्रिका", cce: "लेखी चाचणी", ref: "मराठीच्या प्राचीन समृद्ध वारशाबद्दल अभिमान निर्माण झाला." },
+        ws: ["मराठीतील आद्य गद्य चरित्रग्रंथ कोणता व त्याचे लेखक कोण?", "'म्हाइंभटी शिक्षापणी' या पाठातून कोणता नैतिक बोध मिळतो?", "पाठातील कोणत्याही 4 प्राचीन मराठी शब्दांचे आजचे अर्थ लिहा.", "या पाठाचा सारांश तुमच्या शब्दांत 4 ते 5 वाक्यांत लिहा."]
+      },
+      {
+        id: "m24", no: "24", cat: "gram", dept: "व्याकरण, लेखन व शब्दसंग्रह", title: "व्याकरण, लेखन व शब्दसंग्रह (संधी, अलंकार, पत्र, निबंध)", author: "पाठ्यपुस्तक विभाग (पृ. 105 पुढे)", method: "उद्गामी-अवगामी व्याकरण पद्धती",
+        obj: "इयत्ता 8 वीसाठी निर्धारित संधी, अलंकार (उपमा, उत्प्रेक्षा, यमक, चेतनगुणोक्ती), वाक्प्रचार, पत्रलेखन, निबंधलेखन व शुद्धलेखनावर प्रभुत्व मिळवणे.",
+        e1: { skill: "श्रवण, संभाषण", m: "प्रश्नोत्तर", act: "पूर्वीच्या पाठांतील व्याकरण उदाहरणे (संधी, अलंकार, वाक्प्रचार) विचारून विद्यार्थ्यांचे पूर्वज्ञान तपासणे.", tlm: "व्याकरण तक्ते, फलक", cce: "तोंडी उजळणी", ref: "विद्यार्थ्यांनी पाठांतील उदाहरणे अचूक सांगितली." },
+        e2: { skill: "वाचन, निरीक्षण", m: "उद्गामी पद्धती", act: "प्रत्येक व्याकरण घटकाची (स्वरसंधी/व्यंजनसंधी, अलंकार, विरामचिन्हे) 4–5 उदाहरणे फलकावर लिहून नियम शोधण्यास सांगणे.", tlm: "पाठ्यपुस्तक (पृ. 105), तक्ते", cce: "निरीक्षण", ref: "उदाहरणांवरून नियम समजून घेणे सोपे झाले." },
+        e3: { skill: "आकलन, व्याकरण", m: "विश्लेषण", act: "संधी विग्रह, अलंकारांची लक्षणे, औपचारिक-अनौपचारिक पत्रलेखन, निबंधाचे तीन भाग (प्रस्तावना, विषयविस्तार, समारोप) स्पष्ट करणे.", tlm: "लेखन आराखडा तक्ता", cce: "चर्चा व प्रश्नोत्तर", ref: "लेखन व व्याकरणाचे नियम पक्के झाले." },
+        e4: { skill: "लेखन", m: "सराव कार्यशाळा", act: "विद्यार्थ्यांकडून संधी विग्रह, अलंकार ओळखणे, पत्रलेखन, निबंधलेखन व पाठ्यपुस्तकातील शब्दसंग्रहाचा लेखी सराव करून घेणे.", tlm: "सराव पत्रिका, वह्या", cce: "सराव तपासणी", ref: "शुद्धलेखन व स्वतंत्र लेखन कौशल्य सुधारले." },
+        e5: { skill: "लेखन", m: "घटक चाचणी", act: "20 गुणांची सर्वसमावेशक व्याकरण व उपयोजित लेखन चाचणी घेऊन मूल्यमापन करणे.", tlm: "व्याकरण चाचणी पत्रिका", cce: "लेखी चाचणी", ref: "भाषाशुद्धी व अभिव्यक्ती क्षमता साध्य झाली." },
+        ws: ["संधी विग्रह करा : (1) हिमाचल (2) क्षणैक (3) स्थित्यंतर (4) रणांगण.", "उपमा, उत्प्रेक्षा व चेतनगुणोक्ती अलंकाराचे प्रत्येकी एक उदाहरण लिहा.", "वाक्यात उपयोग करा : (1) हातभार लागणे (2) ठाण मांडणे (3) मात करणे.", "'माझा आवडता साहित्यिक' किंवा 'पर्यावरण रक्षण' यावर 10 ओळी निबंध लिहा."]
+      }
+    ];
+
+    var lessonWrap = root.querySelector("#sg8mlpLessons"),
+        schoolEl = root.querySelector("#sg8mlpSchool"),
+        teacherEl = root.querySelector("#sg8mlpTeacher"),
+        yearEl = root.querySelector("#sg8mlpYear"),
+        periodsEl = root.querySelector("#sg8mlpPeriods"),
+        statusEl = root.querySelector("#sg8mlpStatus"),
+        previewArea = root.querySelector("#sg8mlpPreviewArea"),
+        paperWrap = root.querySelector("#sg8mlpPaperWrap"),
+        btnGen = root.querySelector("#sg8mlpGenerate"),
+        btnPrev = root.querySelector("#sg8mlpPreview"),
+        btnPrint = root.querySelector("#sg8mlpPrint"),
+        btnAll = root.querySelector("#sg8mlpSelectAll");
+
+    var current = null, viewMode = "plan", activeCat = "all";
+
+    function badgeHtml(cat) {
+      if (cat === "gadya") return '<span class="sg8mlp-badge sg8mlp-bGadya">गद्य</span>';
+      if (cat === "padya") return '<span class="sg8mlp-badge sg8mlp-bPadya">पद्य</span>';
+      return '<span class="sg8mlp-badge sg8mlp-bGram">व्याकरण</span>';
+    }
+
+    lessonWrap.innerHTML = "";
+    for (var i = 0; i < LESSONS.length; i++) {
+      var it = LESSONS[i];
+      var lab = document.createElement("label");
+      lab.className = "sg8mlp-lesson";
+      lab.setAttribute("data-cat", it.cat);
+      lab.innerHTML = '<input type="checkbox" class="sg8mlp-chk" value="' + it.id + '"> <span>' + badgeHtml(it.cat) + it.no + ". " + it.title + "</span>";
+      lessonWrap.appendChild(lab);
+    }
+
+    var catBtns = root.querySelectorAll(".sg8mlp-catBtn");
+    for (var c = 0; c < catBtns.length; c++) {
+      catBtns[c].addEventListener("click", function () {
+        activeCat = this.getAttribute("data-cat");
+        for (var j = 0; j < catBtns.length; j++) { catBtns[j].classList.remove("sg8mlp-catOn"); }
+        this.classList.add("sg8mlp-catOn");
+        var items = lessonWrap.querySelectorAll(".sg8mlp-lesson");
+        for (var k = 0; k < items.length; k++) {
+          items[k].style.display = (activeCat === "all" || items[k].getAttribute("data-cat") === activeCat) ? "flex" : "none";
+        }
+      });
+    }
+
+    function syncMode(m) {
+      viewMode = m;
+      var btns = root.querySelectorAll(".sg8mlp-tabBtn, .sg8mlp-miniTab");
+      for (var i = 0; i < btns.length; i++) {
+        if (btns[i].getAttribute("data-mode") === m) { btns[i].classList.add("sg8mlp-active"); }
+        else { btns[i].classList.remove("sg8mlp-active"); }
+      }
+      if (current) render();
+    }
+
+    var mBtns = root.querySelectorAll(".sg8mlp-tabBtn, .sg8mlp-miniTab");
+    for (var m = 0; m < mBtns.length; m++) {
+      mBtns[m].addEventListener("click", function () { syncMode(this.getAttribute("data-mode")); });
+    }
+
+    function esc(v) {
+      var d = document.createElement("div");
+      d.textContent = v == null ? "" : String(v);
+      return d.innerHTML;
+    }
+
+    function msg(t, ok) {
+      statusEl.className = "sg8mlp-status " + (ok ? "sg8mlp-ok" : "sg8mlp-warn");
+      statusEl.textContent = t;
+    }
+
+    function checkedLessons() {
+      var ids = Array.prototype.slice.call(root.querySelectorAll(".sg8mlp-chk:checked")).map(function (x) { return x.value; });
+      return LESSONS.filter(function (l) { return ids.indexOf(l.id) !== -1; });
+    }
+
+    function rowHtml(stageTitle, s) {
+      return '<tr>'
+        + '<td><div class="sg8mlp-stageTag">' + stageTitle + '</div></td>'
+        + '<td>' + esc(s.skill) + '</td>'
+        + '<td>' + esc(s.m) + '</td>'
+        + '<td>' + esc(s.act) + '</td>'
+        + '<td>' + esc(s.tlm) + '</td>'
+        + '<td>' + esc(s.cce) + '</td>'
+        + '<td class="sg8mlp-dateBox">दिनांक:<br>___/___/20__</td>'
+        + '<td>' + esc(s.ref) + '<div class="sg8mlp-reflSpace"></div></td>'
+        + '</tr>';
+    }
+
+    function render() {
+      var d = current, html = "";
+      for (var idx = 0; idx < d.lessons.length; idx++) {
+        var L = d.lessons[idx];
+        html += '<div class="sg8mlp-sheet">';
+        html += '<div class="sg8mlp-docHeader">';
+        html += '<div class="sg8mlp-school">' + esc(d.school) + '</div>';
+        html += '<div class="sg8mlp-subTitle">5E मॉडेल पाठ टाचण — इयत्ता : 8 वी | विषय : मराठी (प्रथम भाषा – माय-मराठी)</div>';
+        html += '<div class="sg8mlp-metaGrid">';
+        html += '<div><strong>शिक्षकाचे नाव :</strong> ' + esc(d.teacher) + '</div>';
+        html += '<div><strong>साहित्य प्रकार :</strong> ' + esc(L.dept) + '</div>';
+        html += '<div><strong>घटक :</strong> ' + L.no + '. ' + esc(L.title) + '</div>';
+        html += '<div><strong>अवधी :</strong> ' + esc(d.periods) + '</div>';
+        html += '<div><strong>लेखक / कवी :</strong> ' + esc(L.author) + '</div>';
+        html += '<div><strong>अध्यापनाचे विधान :</strong> ' + esc(L.method) + '</div>';
+        html += '<div><strong>सुरुवातीची तारीख :</strong> ___/___/20__</div>';
+        html += '<div><strong>समाप्तीची तारीख :</strong> ___/___/20__</div>';
+        html += '</div></div>';
+
+        html += '<div class="sg8mlp-objBox"><strong>अध्यापनाचे उद्दिष्ट (शैक्षणिक वर्ष ' + esc(d.year) + ') :</strong> ' + esc(L.obj) + '</div>';
+
+        html += '<table class="sg8mlp-table">';
+        html += '<colgroup><col style="width:11%"><col style="width:9%"><col style="width:10%"><col style="width:28%"><col style="width:12%"><col style="width:10%"><col style="width:8%"><col style="width:12%"></colgroup>';
+        html += '<thead><tr><th>टप्पे (5E)</th><th>भाषिक कौशल्ये</th><th>अध्यापन पद्धती</th><th>अध्यापन सुकर कृती</th><th>अध्ययन / अध्यापन सामग्री</th><th>मूल्यमापन तंत्र व साधन</th><th>तारीख</th><th>स्व-अवलोकन</th></tr></thead><tbody>';
+        html += rowHtml("1. कार्यमग्नता<br>(पूर्वज्ञान)", L.e1);
+        html += rowHtml("2. अनुभव<br>आदान-प्रदान", L.e2);
+        html += rowHtml("3. विश्लेषण", L.e3);
+        html += rowHtml("4. विस्तारीकरण", L.e4);
+        html += rowHtml("5. मूल्यमापन", L.e5);
+        html += '</tbody></table>';
+
+        html += '<div class="sg8mlp-signRow">';
+        html += '<div class="sg8mlp-signCol"><div class="sg8mlp-signLine"></div>दिनांक : _____ / _____ / 20____</div>';
+        html += '<div class="sg8mlp-signCol"><div class="sg8mlp-signLine"></div>विषय शिक्षकाची सही</div>';
+        html += '<div class="sg8mlp-signCol"><div class="sg8mlp-signLine"></div>मुख्याध्यापकाची सही व शिक्का</div>';
+        html += '</div>';
+        html += '<div class="sg8mlp-watermark">SmartGuruji</div>';
+        html += '</div>';
+
+        if (viewMode === "plan_ws") {
+          html += '<div class="sg8mlp-sheet">';
+          html += '<div class="sg8mlp-docHeader">';
+          html += '<div class="sg8mlp-school">' + esc(d.school) + '</div>';
+          html += '<div class="sg8mlp-subTitle">विद्यार्थी स्वाध्याय / मूल्यमापन कार्यपत्रिका — इयत्ता 8 वी मराठी (माय-मराठी)</div>';
+          html += '<div class="sg8mlp-metaGrid">';
+          html += '<div><strong>घटक :</strong> ' + L.no + '. ' + esc(L.title) + '</div>';
+          html += '<div><strong>साहित्य प्रकार :</strong> ' + esc(L.dept) + '</div>';
+          html += '<div><strong>विद्यार्थ्याचे नाव :</strong> ___________________</div>';
+          html += '<div><strong>दिनांक :</strong> ___/___/20__</div>';
+          html += '</div></div>';
+          html += '<div class="sg8mlp-wsTitle">वर्गकार्य व घटक चाचणी स्वाध्याय</div>';
+          for (var q = 0; q < L.ws.length; q++) {
+            html += '<div class="sg8mlp-wsQ">' + (q + 1) + '. ' + esc(L.ws[q]) + '</div>';
+            html += '<div class="sg8mlp-wsLine"></div><div class="sg8mlp-wsLine"></div>';
+          }
+          html += '<div class="sg8mlp-signRow">';
+          html += '<div class="sg8mlp-signCol"><div class="sg8mlp-signLine"></div>गुण / श्रेणी : _________</div>';
+          html += '<div class="sg8mlp-signCol"><div class="sg8mlp-signLine"></div>विषय शिक्षकाची सही</div>';
+          html += '<div class="sg8mlp-signCol"><div class="sg8mlp-signLine"></div>मुख्याध्यापक / पालक सही</div>';
+          html += '</div>';
+          html += '<div class="sg8mlp-watermark">SmartGuruji</div>';
+          html += '</div>';
+        }
+      }
+      paperWrap.innerHTML = html;
+    }
+
+    btnGen.addEventListener("click", function (e) {
+      e.preventDefault();
+      var sel = checkedLessons();
+      if (!sel.length) {
+        msg("कृपया किमान एक पाठ किंवा कविता निवडा.", false);
+        alert("कृपया किमान एक पाठ किंवा कविता निवडा.");
+        return;
+      }
+      current = {
+        school: schoolEl.value.trim() || "सरकारी मराठी उच्च प्राथमिक / माध्यमिक शाळा",
+        teacher: teacherEl.value.trim() || "_______________________",
+        year: yearEl.value.trim() || "2026-27",
+        periods: periodsEl.value,
+        lessons: sel
+      };
+      render();
+      previewArea.style.display = "block";
+      btnPrev.disabled = false;
+      btnPrint.disabled = false;
+      msg(sel.length + " घटकांचे 5E पाठ टाचण यशस्वीरीत्या तयार झाले आहे. Print / Save PDF करा.", true);
+      setTimeout(function () {
+        try { previewArea.scrollIntoView({ behavior: "smooth", block: "start" }); }
+        catch (err) { previewArea.scrollIntoView(); }
+      }, 60);
+    });
+
+    btnAll.addEventListener("click", function () {
+      var vis = Array.prototype.slice.call(lessonWrap.querySelectorAll(".sg8mlp-lesson")).filter(function (el) { return el.style.display !== "none"; });
+      var allOn = vis.every(function (el) { return el.querySelector(".sg8mlp-chk").checked; });
+      vis.forEach(function (el) { el.querySelector(".sg8mlp-chk").checked = !allOn; });
+    });
+
+    btnPrev.addEventListener("click", function () {
+      if (!current) return;
+      try { previewArea.scrollIntoView({ behavior: "smooth", block: "start" }); }
+      catch (err) { previewArea.scrollIntoView(); }
+    });
+
+    btnPrint.addEventListener("click", function () {
+      if (!current) { alert("प्रथम पाठ टाचण तयार करा."); return; }
+      var pCss = "@page{size:A4 landscape;margin:7mm}*{box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact}html,body{margin:0;padding:0;background:#fff;color:#000;font-family:'Mukta','Noto Sans Devanagari','Nirmala UI',Mangal,sans-serif;font-size:12px;line-height:1.4}.sg8mlp-sheet{width:100%;min-height:186mm;padding:7mm 8mm 13mm;background:#fff;position:relative;border:2px solid #000;outline:1px solid #000;outline-offset:-5px;page-break-after:always}.sg8mlp-sheet:last-child{page-break-after:auto}.sg8mlp-docHeader{text-align:center;border-bottom:2px solid #000;padding-bottom:5px;margin-bottom:7px}.sg8mlp-school{font-size:16.5px;font-weight:800;margin:0}.sg8mlp-subTitle{font-size:13.5px;font-weight:800;margin:2px 0 5px}.sg8mlp-metaGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px 8px;text-align:left;font-size:11.5px;font-weight:700;padding:5px 7px;background:#f8fafc;border:1px solid #334155;border-radius:3px}.sg8mlp-objBox{border:1px solid #000;padding:5px 8px;margin:6px 0;font-size:11.8px}.sg8mlp-table{width:100%;border-collapse:collapse;table-layout:fixed;margin-top:4px}.sg8mlp-table th,.sg8mlp-table td{border:1px solid #000;padding:4px 5px;vertical-align:top;word-wrap:break-word;font-size:11.2px}.sg8mlp-table th{background:#e2e8f0;font-weight:800;text-align:center}.sg8mlp-table tr{break-inside:avoid}.sg8mlp-stageTag{display:inline-block;padding:1px 5px;border:1px solid #000;border-radius:3px;background:#f1f5f9;font-weight:800;font-size:10.5px}.sg8mlp-dateBox{font-size:10.5px;font-weight:700;line-height:1.95}.sg8mlp-reflSpace{height:20px;border-bottom:1px dotted #64748b;margin-top:3px}.sg8mlp-signRow{display:flex;justify-content:space-between;align-items:flex-end;margin-top:18px;padding-top:10px;border-top:1.5px solid #000;font-size:12px;font-weight:800}.sg8mlp-signCol{text-align:center;min-width:185px}.sg8mlp-signLine{height:34px;border-bottom:1.5px solid #000;margin-bottom:4px}.sg8mlp-wsTitle{text-align:center;font-size:14.5px;font-weight:800;text-decoration:underline;margin:5px 0 8px}.sg8mlp-wsQ{margin:7px 0 4px;font-size:12.8px;font-weight:700}.sg8mlp-wsLine{height:22px;border-bottom:1px dotted #555;margin:3px 0 8px 12px}.sg8mlp-watermark{position:absolute;right:9px;bottom:5px;font-size:9px;color:rgba(0,0,0,.45);font-style:italic;font-weight:800;letter-spacing:.4px}";
+      var fr = document.createElement("iframe");
+      fr.style.cssText = "position:fixed;right:0;bottom:0;width:0;height:0;border:0";
+      document.body.appendChild(fr);
+      var doc = fr.contentWindow.document;
+      doc.open();
+      doc.write('<!DOCTYPE html><html lang="mr"><head><meta charset="UTF-8"><title>इयत्ता 8 वी मराठी 5E पाठ टाचण - SmartGuruji</title><link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&display=swap" rel="stylesheet"><style>' + pCss + '</style></head><body>' + paperWrap.innerHTML + '</body></html>');
+      doc.close();
+      setTimeout(function () {
+        try {
+          fr.contentWindow.focus();
+          fr.contentWindow.print();
+        } finally {
+          setTimeout(function () { fr.remove(); }, 2000);
+        }
+      }, 600);
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initSg8MarLp);
+  } else {
+    initSg8MarLp();
+  }
+})();
+</script>
+
+</body>
+</html>
